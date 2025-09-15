@@ -1,0 +1,41 @@
+function openModal(name, stars, desc) {
+  document.getElementById("skillName").innerText = name;
+
+  let starHTML = "";
+  for (let i = 0; i < stars; i++) {
+    starHTML += "⭐";
+  }
+  const starsDiv = document.getElementById("skillStars");
+  starsDiv.innerHTML = starHTML;
+
+  document.getElementById("skillDesc").innerText = desc;
+
+  const modal = document.getElementById("skillModal");
+  modal.classList.add("show");  // ใช้ class แทน display:block
+ 
+  setTimeout(() => {
+    starsDiv.classList.add("show"); // fade in ดาว
+  }, 50);
+}
+
+function closeModal() {
+  const modal = document.getElementById("skillModal");
+  modal.classList.remove("show"); // จะ fade out
+}
+
+img.addEventListener('mouseover', () => {
+    img.src = "images/ปั๊มskill1-Photoroom.png";
+    img.classList.add('hover-img')
+     img.src="images/ปั๊มskill2-Photoroom.png";
+            img.style.width = '800px';
+            sound.currentTime = 0;
+            sound.play();
+            setTimeout(() => {
+            sound.pause();
+            }, 4000);
+});
+
+img.addEventListener('mouseout', () => {
+    img.src = "images/ปั๊มskill1-Photoroom.png";
+    img.classList.add('hover-img')
+});

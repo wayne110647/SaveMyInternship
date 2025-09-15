@@ -1,0 +1,133 @@
+nav ul {
+    list-style: none;  /* เอาจุดออก */
+    display: flex; /*ทำให้เป็นแนวนอน*/
+    justify-content: space-around; /*จัดให้อยู่ตรงกลาง*/
+    gap: 2rem; /*เว้นระยะห่าง*/
+    margin: 0;
+    padding: 0;
+
+}
+
+nav a {
+    text-decoration: none; /*เอาเส้นใต้ลิงค์ออก*/
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+
+
+}
+
+.navbar{
+
+    background-color: azure;
+     padding: 1rem;
+     position: sticky; /* ติดบนเวลาเลื่อน */
+     top: 1%; /* ระยะห่างจากบนสุดของหน้าจอ */
+     z-index: 1000; /* ให้แน่ใจว่าอยู่บนทุกอย่าง */
+    
+
+}
+
+
+nav a:hover {
+
+    color: #c08a8a;
+   
+
+}
+
+nav li:hover{
+    transform: scale(1.1);
+    transform: all 0.3s ease;
+}
+
+body {
+    font-family: 'IBM Plex Sans Thai', 'Sarabun', sans-serif;
+    line-height: 1.6;
+    background-image: url("images/bgport.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: large;
+
+}
+
+.home-content{
+    display: flex; /*ตั้งให้เป็นแนวนอน*/
+    align-items: center; /* จัดให้อยู่แนวตั้งตรงกลาง */
+    justify-content: center; /* จัดให้อยู่แนวนอนตรงกลาง */
+    gap: 2rem;  /* เว้นระยะระหว่างรูปกับตัวหนังสือ */
+    padding-right: 3rem;
+    padding-left: 10%;
+    justify-content: flex-start;
+}
+
+.home-image{  
+    width: auto;           /* ขนาดรูป */
+    height: auto;           /* ให้สัดส่วนรูปไม่เสีย */
+    position: relative;
+    top: -200px;
+    padding-right: 4%;
+}
+
+.home-content img {
+   
+    transition: transform 0.3s ease;
+    
+}
+
+.home-content img:hover{
+    transform: scale(1.1);
+}
+
+.home-text h2 {
+    font-size: 35px;
+    margin: 0;
+    text-shadow: 2px 2px 8px black
+}
+
+.home-text h1 {
+    font-size: 60px;
+    margin: 0;
+    text-shadow: 2px 2px 8px black
+}
+
+#main-img {
+    width: 800px; /* ปรับตามต้องการ */
+    height: auto; /* ให้สัดส่วนไม่บิดเบี้ยว */
+    transition: 0.3s; /* ทำให้เปลี่ยนขนาด/เปลี่ยนรูปนุ่มขึ้น */
+}
+
+.hover-img {
+    width: 250px; /* ขนาดใหม่เฉพาะตอน hover */
+    height: auto;
+}
+
+.music-player {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.music-player button {
+  background: #ff9800;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.music-player button:hover {
+  background: #e68900;
+}
+
+.abouttext{
+    text-align: center;
+}

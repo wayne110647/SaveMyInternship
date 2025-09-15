@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChutipongAiengpranee</title>
+  <link rel="stylesheet" href="work.css">
+  <script src="script4.js" defer></script>
+</head>
+<body>
+  <!--ส่วนหัว-->
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="aboutme.html">ใครคือปั๊ม</a></li>
+        <li><a href="skill.html">ทำไรได้บ้าง</a></li>
+        <li><a href="work.html">ผลงาน</a></li>
+        <li><a href="contact.html">ช่องทางการติดต่อ</a></li>
+        <li><a href="index.html">หน้าหลัก</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--กลางเว็ป-->
+<section class="projects-grid">
+    <h1>ผลงานของผม</h1>
+    <div class="grid" id="projectGrid">
+      <!-- JS จะสร้าง grid box เอง -->
+    </div>
+  </section>
+
+  <!-- Modal Gallery -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close" id="closeBtn">&times;</span>
+      <div class="main-image"><img id="modalMain" src="" alt="Project Image"></div>
+      <div class="thumbnails" id="modalThumbs"></div>
+      <div class="controls">
+        <button id="prevBtn">◀️ ก่อนหน้า</button>
+        <button id="nextBtn">ถัดไป ▶️</button>
+      </div>
+      <div class="project-info">
+        <h2 id="modalTitle"></h2>
+        <p id="modalDesc"></p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  
+</body>
+</html>

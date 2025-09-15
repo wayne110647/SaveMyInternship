@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChutipongAiengpranee</title>
+    <link rel="stylesheet" href="backendskill.css">
+    <script src="script2.js" defer></script>
+
+</head>
+<body>
+    <!--ส่วนหัว-->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="aboutme.html">ใครคือปั๊ม</a> </li>
+                <li> <a href="skill.html">ทำไรได้บ้าง</a> </li>
+                <li> <a href="work.html">ผลงาน</a> </li>
+                <li> <a href="contact.html">ช่องทางการติดต่อ</a> </li>
+                <li><a href="index.html">หน้าหลัก</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <!--กลางเว็ป-->
+
+    <section id="home" class="home-section">
+        <div class="home-content"> 
+            <div class="home-image">
+                <img id="main-img" src="images/ปั๊มskill1-Photoroom.png">
+                <audio id='hover-sound' src="music/เฮ้ยแท้จริงๆ.mp3"preload="auto"></audio>
+            </div>
+        
+        <div class="skill-text">
+            <h1>ความสามารถ</h1>
+            
+        </div>
+            
+             <div class="image-skill">
+                
+                <img src="images/canva.png" alt="โลโก้แคนวา" onclick="openModal('Canva', 5,'ออกแบบโปสเตอร์, อินโฟกราฟิก, งานนำเสนอ')">
+                          
+        </div>
+       
+        <div class="image-visual">
+            <img src="images/Visual-Studio-Logo-2019.png" alt="โลโก้วิชเชิล"onclick="openModal('Visual-studio', 4, 'Java css html python ในระดับพื้นฐาน')">
+            
+        </div>
+
+        <div class="image-figma">
+            <img src="images/Figma-logo.svg.png"onclick="openModal('Figma', 4, 'สามารถใช้งานได้ระดับพื้นฐาน')">
+        </div>
+
+        <div class="image-sql">
+            <img src="images/microsoft-sql-server-logo.svg"onclick="openModal('SQLSERVER', 2, 'ไม่ค่อยชำนาญแต่พร้อมเรียนรู้ครับ')">
+        </div>
+
+        <div class="image-cisco">
+            <img src="images/cisco-packet-tracer.png" class="image-cisco"onclick="openModal('Ciscopacket', 2, 'ได้ศึกษาในการวางระบบเครือข่ายแต่เนื่องจากไม่ใช่วิชาหลักเลยไม่ชำนาญครับ')">
+        </div>
+
+        <div class="image-linux">
+            <img src="images/linux.png" class="image-linux"onclick="openModal('linux', 3, 'เคยได้ศึกษา cybersecurity ในระดับเบื้องต้นครับ')">
+        </div>
+
+        <div class="image-kodular">
+            <img src="images/kodular.png" class="image-kodular"onclick="openModal('kodular', 4, 'เคยศึกษาในระดับปวชครับ')">
+        </div>
+
+        <div class="image-premierpro">
+            <img src="images/Adobe_Premiere_Pro_CC_icon.svg.png" class="image-premierpro"onclick="openModal('linux', 4, 'สามารถตัดคลิปผ่านโปรแกรมนี้ได้ครับ')">
+        </div>
+
+        <div class="image-word">
+            <img src="images/Microsoft_Office_Word_(2019–present).svg.png" class="image-word"onclick="openModal('WORD', 4, 'ใช้wordได้ในระดับพื้นฐานครับ')">
+        </div>
+
+        <div class="image-powerpoint">
+            <img src="images/Microsoft_PowerPoint_Logo.png" class="image-powerpoint"onclick="openModal('Powerpoint', 4, 'ใช้ได้ในระดับพื้นฐาน')">
+        </div>
+
+    <div id="skillModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="skillName"></h2>
+            <div id="skillStars" class="stars"></div>
+            <p id="skillDesc"></p>
+        </div>
+    </div>
+
+            
+        </div>
+    </section>
+
+    <script>
+        const img = document.getElementById('main-img');
+        const sound = document.getElementById('hover-sound');
+        //ถ้ามีการชี้//
+        img.addEventListener('mouseover',() => {
+            img.src=images/ปั๊ม2-Photoroom.png;
+            img.style.width = '800px';
+            sound.currentTime = 0;
+            sound.play();
+            
+
+
+        });
+
+        //เอาเมาส์ออกกลับรูปเดิม//
+        img.addEventListener('mouseout', () => {
+        img.src = images/ปั๊ม1-Photoroom.png;
+        
+    });
+    </script>
+
+
+
+
+
+
+</body>
+</html>

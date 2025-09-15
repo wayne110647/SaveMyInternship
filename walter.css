@@ -1,0 +1,217 @@
+nav ul {
+    list-style: none;  /* เอาจุดออก */
+    display: flex; /*ทำให้เป็นแนวนอน*/
+    justify-content: space-around; /*จัดให้อยู่ตรงกลาง*/
+    gap: 2rem; /*เว้นระยะห่าง*/
+    margin: 0;
+    padding: 0;
+
+}
+
+nav a {
+    text-decoration: none; /*เอาเส้นใต้ลิงค์ออก*/
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+
+
+}
+
+.navbar{
+
+    background-color: azure;
+     padding: 1rem;
+     position: sticky; /* ติดบนเวลาเลื่อน */
+     top: 1%; /* ระยะห่างจากบนสุดของหน้าจอ */
+     z-index: 1000; /* ให้แน่ใจว่าอยู่บนทุกอย่าง */
+    
+
+}
+
+
+nav a:hover {
+
+    color: #c08a8a;
+   
+
+}
+
+nav li:hover{
+    transform: scale(1.1);
+    transform: all 0.3s ease;
+}
+
+body {
+    font-family: 'Times New Roman Bold Italic', 'Times', sans-serif;
+    line-height: 1.6;
+    background-image: url("images/bgport.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: large;
+
+}
+
+.textname{
+    text-align: center;
+    padding-top: 1%;
+    font-size: 48px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.text2{
+    text-align: center;
+    
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(255, 251, 0);
+    padding-top: -1%;
+    
+}
+
+
+.photowebsite img {
+    max-width: 300px;      /* จำกัดขนาดไม่ให้ใหญ่เกินไป */
+    width: 100%;           /* ให้ยืดเต็ม container แต่ไม่เกิน max-width */
+    height: auto;          /* รักษาอัตราส่วนภาพ */
+    border: 6px solid #e1c547; /* กรอบทองบาง ๆ */         
+    display: block;        /* จัดให้อยู่บรรทัดเดียว */
+    margin: 20px auto;     /* กึ่งกลางหน้า */
+    border-radius: 6px;    /* มุมโค้งเล็กน้อยสวย ๆ */
+    box-shadow: 0 0 10px rgb(0, 0, 0); /* เงาเบา ๆ เพิ่มมิติ */
+    outline: 4px solid #fff; 
+    
+}
+
+.photogrid {
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    justify-items: center;
+    align-items: center;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    padding-left: 500px;
+    
+}
+
+.photogrid img {
+    width: 200px;
+    border: 2px solid silver;
+    outline: 4px solid #fff;
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    object-fit: cover;
+    
+}
+
+.photogrid2 img {
+    width: 200px;
+    border: 2px solid silver;
+
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    object-fit: cover;
+    
+}
+
+.photogrid2 {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    padding-left: 0px;
+    
+}
+
+.info{
+    text-align: center;
+    color: yellow;
+    text-shadow: 2px 2px 8px black
+}
+
+.banner img{
+    width: 600px;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    padding-left: 650px;
+
+}
+
+.click img{
+    width: 600px;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    padding-left: 630px;
+
+}
+
+.lastinfo{
+    text-align: center;
+    padding: 2%;
+    background-color: black;
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.img-hover{
+    width: 300px;
+    transition: 0.6s ease;
+}
+
+.img-hover:hover{
+    transform: scale(1.1);
+}
+    
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  color: rgb(255, 255, 255);
+}
+
+#loading img {
+  width: 300px; /* ปรับขนาดตามต้องการ */
+}
+
+.loading-content {
+    text-align: center;
+}
+
+.loading-content p {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 0.2; }
+  50% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
+
+
+
+
+
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChutipongAiengpranee</title>
+    <link rel="stylesheet" href="backendabout.css">
+    <script src="script3.js" defer></script>
+
+</head>
+<body>
+    <!--ส่วนหัว-->
+    <div id="content">
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="aboutme.html">ใครคือปั๊ม</a> </li>
+                <li> <a href="skill.html">ทำไรได้บ้าง</a> </li>
+                <li> <a href="works.html">ผลงาน</a> </li>
+                <li> <a href="contact.html">ช่องทางการติดต่อ</a> </li>
+                <li><a href="index.html">หน้าหลัก</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <!--กลางเว็ป-->
+
+    <section id="home" class="home-section">
+        <div class="home-content"> 
+            <div class="home-image">
+                <img id="main-img" src="images/ปั๊ม1-Photoroom.png">
+                <audio id='hover-sound' src="music/เฮ้ยแท้จริงๆ.mp3"preload="auto"></audio>
+            </div>
+            
+             <div class="home-text">
+              <h1>ปั๊มคือใคร ?</h1>
+                <h2>สวัสดีพี่ๆทุกคนด้วยครับ ผมชุติพงศ์ เอี้ยงปราณี (ปั๊ม) ผมกำลังศึกษาอยู่มหาวิทยาลัยศรีปทุม คณะเทคโนโลยีสารสนเทศและการสื่อสาร ผมไม่เก่งพวกฐานข้อมูลเท่าไหร่ <br> พวกเขียนเว็ปไซต์ผมก็ไม่กล้าบอกด้วยว่าผมเก่ง <br>แต่ผมพร้อมที่จะเรียนรู้จากพี่ๆครับ. </h2>
+        </div>
+            
+        </div>
+    </section>
+    </div>
+
+    <script>
+        const img = document.getElementById('main-img');
+        const sound = document.getElementById('hover-sound');
+        //ถ้ามีการชี้//
+        img.addEventListener('mouseover',() => {
+            img.src="images/ปั๊ม2-Photoroom.png";
+            img.style.width = '800px';
+            sound.currentTime = 0;
+            sound.play();
+            
+
+
+        });
+
+        //เอาเมาส์ออกกลับรูปเดิม//
+        img.addEventListener('mouseout', () => {
+        img.src = "images/ปั๊ม1-Photoroom.png";
+        
+    });
+    </script>
+
+<div class="music-player">
+  <button id="music-toggle">▶️ Play</button>
+</div>
+
+<audio id="bg-music" loop>
+  <source src="music/dragonball_gt_dandan.mp3.mp3" type="audio/mpeg">
+  เบราว์เซอร์ของคุณไม่รองรับการเล่นเสียง
+</audio>
+
+<script>
+  const music = document.getElementById('bg-music');
+  const toggleBtn = document.getElementById('music-toggle');
+
+  toggleBtn.addEventListener('click', () => {
+    if (music.paused) {
+      // เล่นเพลง
+      music.play().then(() => {
+        toggleBtn.textContent = '⏸ Pause';
+      }).catch((error) => {
+        console.log('ไม่สามารถเล่นเพลงได้:', error);
+      });
+    } else {
+      // หยุดเพลง
+      music.pause();
+      toggleBtn.textContent = '▶️ Play';
+    }
+  });
+</script>
+
+
+
+
+
+
+</body>
+</html>
