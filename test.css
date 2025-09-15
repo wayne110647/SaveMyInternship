@@ -338,7 +338,21 @@ body {
   box-shadow: 0 0 8px rgba(0,0,0,0.3);
 }
 
+.click {
+  text-align: center; /* จัดเนื้อหาภายในให้กลาง */
+  padding: 20px;
 }
+
+.img-hover {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
 
 
 
