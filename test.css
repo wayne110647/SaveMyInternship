@@ -101,6 +101,8 @@ body {
     padding: 0;
     font-size: 0;
     padding-left: 0;
+    max-width: 1000px;
+    width: 100%;
     
 }
 
