@@ -211,12 +211,16 @@ body {
 }
 
 @media (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
   body {
     font-size: 16px;
-    background-size: cover;
-    background-position: center;
     margin: 0;
     padding: 0;
+    background-size: cover;
+    background-position: center;
   }
 
   .navbar {
@@ -231,6 +235,11 @@ body {
     text-align: center;
   }
 
+  .navbar a {
+    font-size: 1em;
+    padding: 0.5em;
+  }
+
   .textname {
     font-size: 1.5em;
     padding: 10px;
@@ -241,6 +250,7 @@ body {
     font-size: 1.2em;
     padding: 10px;
     text-align: center;
+    color: yellow;
   }
 
   .photowebsite img,
@@ -252,36 +262,46 @@ body {
     height: auto;
     margin: 10px auto;
     display: block;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
   }
 
   .photogrid {
-    grid-template-columns: 1fr;
-    padding-left: 0;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
   }
 
   .photogrid2 {
+    display: grid;
     grid-template-columns: 1fr;
-    padding-left: 0;
-    justify-content: center;
+    gap: 10px;
+    padding: 10px;
   }
 
-  .info h2 {
+  .info h2,
+  .lastinfo {
     font-size: 1em;
     padding: 10px;
     text-align: center;
+    color: yellow;
   }
 
   .lastinfo {
+    background-color: black;
     width: 90%;
-    padding: 5%;
-    font-size: 1em;
     margin: 20px auto;
-    text-align: center;
+    border-radius: 8px;
   }
 
   .img-hover {
     width: 100%;
+    transition: 0.6s ease;
+  }
+
+  .img-hover:hover {
+    transform: scale(1.05);
   }
 
   #loading img {
@@ -292,6 +312,8 @@ body {
     font-size: 1em;
   }
 }
+
+
 
 
 
