@@ -316,6 +316,28 @@ body {
   .loading-content p {
     font-size: 1em;
   }
+ .banner {
+  text-align: center;
+  padding: 20px;
+  background-color: orange;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 90%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.button {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
 }
 
 
