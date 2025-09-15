@@ -339,19 +339,22 @@ body {
 }
 
 .click {
-  text-align: center; /* จัดเนื้อหาภายในให้กลาง */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
 }
 
 .img-hover {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
   display: block;
   margin: 0 auto;
-  width: 100%;
-  max-width: 300px;
-  height: auto;
   border-radius: 8px;
   box-shadow: 0 0 8px rgba(0,0,0,0.3);
 }
+
 
 
 
