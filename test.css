@@ -259,17 +259,7 @@ body {
     color: yellow;
   }
 
-  .photogrid img,
-  .photogrid2 img,
-  .banner img,
-  .click img {
-    width: 100%;
-    height: auto;
-    margin: 10px auto;
-    display: block;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  }
+
 .photowebsite img {
     width: 70%;
     height: auto;
@@ -334,8 +324,27 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
   }
+
+  .click img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-left: 0;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    transition: 0.6s ease;
+  }
+
+  .click {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
 }
-    
 
 
 
