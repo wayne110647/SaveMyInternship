@@ -259,7 +259,6 @@ body {
     color: yellow;
   }
 
-  .photowebsite img,
   .photogrid img,
   .photogrid2 img,
   .banner img,
@@ -271,6 +270,11 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
   }
+.photowebsite img,{
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    }
 
   .photogrid {
     display: grid;
