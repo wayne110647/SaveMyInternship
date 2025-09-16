@@ -339,6 +339,11 @@ body {
   .loading-content p {
     font-size: 1em;
   }
+   
+.loading-content  {
+    text-align: center;
+    padding: 20px;
+  }
 
   .banner {
     text-align: center;
