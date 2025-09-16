@@ -270,11 +270,12 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
   }
-.photowebsite img,{
+.photowebsite img {
     width: 70%;
     height: auto;
     margin: 10px auto;
     }
+    
 
   .photogrid {
     display: grid;
@@ -321,7 +322,21 @@ body {
   .loading-content p {
     font-size: 1em;
   }
+
+.banner img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-left: 0;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
 }
+    
+
 
 
 
