@@ -229,7 +229,6 @@ body {
     background-position: center;
   }
 
-  /* ✅ Navbar */
   .navbar ul {
     display: flex;
     flex-wrap: nowrap;
@@ -259,29 +258,19 @@ body {
     background-color: #555;
   }
 
-  /* ✅ ข้อความ */
-  .textname,
-  .text2,
-  .info h2,
-  .lastinfo {
-    text-align: center;
+  .textname {
+    font-size: 1.5em;
     padding: 10px;
+    text-align: center;
+  }
+
+  .text2 {
     font-size: 1.2em;
+    padding: 10px;
+    text-align: center;
     color: yellow;
   }
 
-  .textname {
-    font-size: 1.5em;
-  }
-
-  .lastinfo {
-    background-color: black;
-    width: 90%;
-    margin: 20px auto;
-    border-radius: 8px;
-  }
-
-  /* ✅ ภาพทั่วไป */
   .photowebsite img,
   .photogrid img,
   .photogrid2 img,
@@ -296,13 +285,12 @@ body {
     margin: 10px auto;
   }
 
-  /* ✅ Grid ภาพ */
   .photogrid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
     gap: 10px;
-    margin: 0 auto;
     padding: 10px;
+    margin: 0 auto;
     justify-items: center;
     max-width: 100%;
   }
@@ -314,20 +302,27 @@ body {
     padding: 10px;
   }
 
-  /* ✅ ปุ่ม */
-  .click {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  .info h2,
+  .lastinfo {
+    font-size: 1em;
+    padding: 10px;
+    text-align: center;
+    color: yellow;
+  }
+
+  .lastinfo {
+    background-color: black;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 8px;
   }
 
   .img-hover {
-    display: block;
-    margin: 0 auto;
     max-width: 300px;
     width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto;
     border-radius: 8px;
     box-shadow: 0 0 8px rgba(0,0,0,0.3);
     transition: 0.6s ease;
@@ -337,7 +332,14 @@ body {
     transform: scale(1.05);
   }
 
-  /* ✅ Banner */
+  #loading img {
+    width: 200px;
+  }
+
+  .loading-content p {
+    font-size: 1em;
+  }
+
   .banner {
     text-align: center;
     padding: 20px;
@@ -350,15 +352,24 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
   }
 
-  /* ✅ Loading */
-  #loading img {
-    width: 200px;
+  .button {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
   }
 
-  .loading-content p {
-    font-size: 1em;
+  .click {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
   }
 }
+
 
 
 
