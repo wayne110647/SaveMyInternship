@@ -286,7 +286,12 @@ body {
     font-size: 1em;
     padding: 10px;
     text-align: center;
-    color: yellow;
+    color: white;
+    margin-bottom: 20px; /* ไม่ควรเกินนี้ */
+    max-height: 200px;   /* ป้องกันกินพื้นที่เกิน */
+    overflow: auto;
+}
+
   }
 
   .lastinfo {
