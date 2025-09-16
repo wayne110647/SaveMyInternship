@@ -40,117 +40,178 @@ nav li:hover{
     transform: all 0.3s ease;
 }
 
-/* ฟอนต์และพื้นฐาน */
 body {
-  font-family: 'IBM Plex Sans Thai', 'Sarabun', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-image: url("images/bgport.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
+    font-family: 'IBM Plex Sans Thai', 'Sarabun', sans-serif;
+    line-height: 1.6;
+    background-image: url("images/bgport.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: large;
+
 }
 
-/* Navbar */
-.navbar {
-  background-color: azure;
-  padding: 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+.image-skill img {
+    width: 10%;
+    height: auto; /* รักษาสัดส่วน */
+    display: block; /* ลบช่องว่างรอบรูป */
+    position: relative;
+    float: right;
+    margin-right: 700px;
+    top: -800px;
+    cursor: pointer;
 }
 
-.navbar ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
+.image-visual img {
+    width: 20%;
+    height: auto; /* รักษาสัดส่วน */
+    display: block; /* ลบช่องว่างรอบรูป */
+    position: relative;
+    float: right;
+    margin-right: -700px;
+    top: -800px;
+    cursor: pointer;
 }
 
-.navbar a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
+.image-skill img:hover {
+  transform: scale(1.1);           /* ขยายเล็กน้อย */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5); /* เงา */
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.navbar a:hover {
-  color: #c08a8a;
+.image-figma img{
+    width: 7%;
+    height: auto; /* รักษาสัดส่วน */
+    display: block; /* ลบช่องว่างรอบรูป */
+    position: relative;
+    float: right;
+    margin-right: -150px;
+    top: -500px;
+    cursor: pointer;
+
+    
+
+}
+.image-figma img:hover {
+  transform: scale(1.1);           /* ขยายเล็กน้อย */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5); /* เงา */
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-nav li:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
+.image-visual img:hover {
+  transform: scale(1.1);           /* ขยายเล็กน้อย */
+  box-shadow: 0 3px 10px rgba(0,0,0,0.5); /* เงา */
+  transition: transform 0.3s, box-shadow 0.3s;
 }
+.image-sql img{
+    width: 10%;
+    height: auto; /* รักษาสัดส่วน */
+    display: block; /* ลบช่องว่างรอบรูป */
+    position: relative;
+    float: right;
+    margin-right: -600px;
+    top: -500px;
 
-/* Section: Skills */
-.skills-section {
-  padding: 20px;
-  text-align: center;
-}
-
-.profile-area {
-  position: relative;
-  max-width: 320px;
-  margin: 0 auto;
 }
 
 #main-img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  display: block;
-  transition: 0.3s ease;
+    width: 800px; /* ปรับตามต้องการ */
+    height: auto; /* ให้สัดส่วนไม่บิดเบี้ยว */
+    transition: 0.3s; /* ทำให้เปลี่ยนขนาด/เปลี่ยนรูปนุ่มขึ้น */
+    top: -100px;
+    position: relative;
 }
 
-.skill-title {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
-  color: white;
-  text-shadow: 2px 2px 6px black;
-  font-weight: bold;
+.skill-text {
+     position: absolute;
+     top: 20px;  /* ระยะห่างจากด้านบน */
+     left: 50%;  /* กึ่งกลาง */
+     transform: translateX(-50%); /* ดันข้อความให้กึ่งกลางพอดี */
+     font-size: 40px;
+     color: white;
+     font-weight: bold;
+     text-shadow: 2px 2px 8px black; /* ให้ตัวอักษรอ่านง่ายบนรูป */
+     
+    
 }
 
-/* Software icons */
-.software-icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-  margin-top: 20px;
+.image-cisco {
+    width: 80px;    /* ความกว้างบังคับเลย */
+    height: auto;   /* รักษาสัดส่วน */
+    position: absolute;  /* จะจัดตำแหน่งง่ายกว่า */
+    right: 20px;    /* ห่างจากขอบขวา */
+    top: 480px;      /* ห่างจากขอบบน */
+    margin-right: 400px;
+
 }
 
-.software-icons img {
-  width: 60px;
-  height: auto;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+.image-linux {
+    width: 80px;    /* ความกว้างบังคับเลย */
+    height: auto;   /* รักษาสัดส่วน */
+    position: absolute;  /* จะจัดตำแหน่งง่ายกว่า */
+    right: 20px;    /* ห่างจากขอบขวา */
+    top: 480px;      /* ห่างจากขอบบน */
+    margin-right: 300px;
+
 }
 
-.software-icons img:hover {
-  transform: scale(1.1);
+.image-kodular {
+    width: 80px;    /* ความกว้างบังคับเลย */
+    height: auto;   /* รักษาสัดส่วน */
+    position: absolute;  /* จะจัดตำแหน่งง่ายกว่า */
+    right: 20px;    /* ห่างจากขอบขวา */
+    top: 480px;      /* ห่างจากขอบบน */
+    margin-right: 200px;
+
 }
 
-/* Modal */
+.image-premierpro {
+    width: 80px;    /* ความกว้างบังคับเลย */
+    height: auto;   /* รักษาสัดส่วน */
+    position: absolute;  /* จะจัดตำแหน่งง่ายกว่า */
+    right: 20px;    /* ห่างจากขอบขวา */
+    top: 480px;      /* ห่างจากขอบบน */
+    margin-right: 100px;
+
+}
+
+.image-word {
+    width: 80px;    /* ความกว้างบังคับเลย */
+    height: auto;   /* รักษาสัดส่วน */
+    position: absolute;  /* จะจัดตำแหน่งง่ายกว่า */
+    right: 20px;    /* ห่างจากขอบขวา */
+    top: 580px;      /* ห่างจากขอบบน */
+    margin-right: 400px;
+    cursor: pointer;
+
+}
+
+.image-powerpoint {
+    width: 80px;    /* ความกว้างบังคับเลย */
+    height: auto;   /* รักษาสัดส่วน */
+    position: absolute;  /* จะจัดตำแหน่งง่ายกว่า */
+    right: 20px;    /* ห่างจากขอบขวา */
+    top: 580px;      /* ห่างจากขอบบน */
+    margin-right: 300px;
+
+}
+
 .modal {
-  position: fixed;
-  z-index: 10;
+  position: fixed; 
+  z-index: 10; 
   left: 0; top: 0;
   width: 100%; height: 100%;
   background: rgba(0,0,0,0.7);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease;
-  display: flex;
+  
+  opacity: 0;            /* เริ่มซ่อน */
+  visibility: hidden;    /* เริ่มซ่อน */
+  transition: opacity 0.3s ease; /* ทำให้ fade */
+  
+  display: flex;          /* ใช้ flex เพื่อจัด modal-content กึ่งกลาง */
   justify-content: center;
   align-items: center;
 }
-
 .modal.show {
   opacity: 1;
   visibility: visible;
@@ -158,6 +219,7 @@ nav li:hover {
 
 .modal-content {
   background-color: rgb(132, 224, 144);
+  margin: 15% auto; 
   padding: 20px;
   border-radius: 12px;
   width: 300px;
@@ -184,24 +246,46 @@ nav li:hover {
   opacity: 1;
 }
 
-/* Responsive for mobile */
-@media screen and (max-width: 768px) {
-  .profile-area {
-    max-width: 280px;
-  }
+.image-cisco img:hover {
+  transform: scale(1.1);           /* ขยายเล็กน้อย */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5); /* เงา */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 
-  .skill-title {
-    font-size: 20px;
-  }
+.image-powerpoint img:hover {
+  transform: scale(1.1);           /* ขยายเล็กน้อย */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5); /* เงา */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 
-  .software-icons img {
-    width: 45px;
-  }
+.image-word img:hover {
+  transform: scale(1.1);           /* ขยายเล็กน้อย */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5); /* เงา */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 
-  .modal-content {
-    width: 90%;
-    margin: 10% auto;
-  }
+.image-premierpro img:hover {
+  transform: scale(1.1);           /* ขยายเล็กน้อย */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5); /* เงา */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-kodular img:hover {
+  transform: scale(1.1);           /* ขยายเล็กน้อย */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5); /* เงา */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-sql img:hover {
+  transform: scale(1.1);           /* ขยายเล็กน้อย */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5); /* เงา */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-linux img:hover {
+  transform: scale(1.1);           /* ขยายเล็กน้อย */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5); /* เงา */
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 
@@ -209,14 +293,10 @@ nav li:hover {
 
 
 
-
     
     
     
     
-
-
-
 
 
 
