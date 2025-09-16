@@ -119,8 +119,7 @@ body {
 
 .photogrid2 img {
     width: 300px;
-    
-
+    border: none;
     display: block;
     margin: 0;
     padding: 0;
