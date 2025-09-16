@@ -261,7 +261,7 @@ body {
 
 
 .photowebsite img {
-    width: 70%;
+    width: 50%;
     height: auto;
     margin: 10px auto;
     }
@@ -281,8 +281,8 @@ body {
     padding: 10px;
   }
 
-  .info h2,
-  .lastinfo {
+
+.lastinfo {
     font-size: 1em;
     padding: 12px;
     text-align: center;
