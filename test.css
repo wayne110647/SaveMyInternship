@@ -96,7 +96,7 @@ body {
     grid-template-columns: repeat(3,300px);
     justify-items: center;
     align-items: center;
-    gap: 5px;
+    gap: 5;
     margin: 0 auto;
     padding: 0;
     max-width: 1000px;
@@ -113,6 +113,7 @@ body {
     padding: 0;
     height: auto;
     object-fit: cover;
+    gap: 5;
     
 }
 
