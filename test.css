@@ -284,15 +284,20 @@ body {
   .info h2,
   .lastinfo {
     font-size: 1em;
-    padding: 10px;
+    padding: 12px;
     text-align: center;
-    color: white;
-    margin-bottom: 20px; /* ไม่ควรเกินนี้ */
-    max-height: 200px;   /* ป้องกันกินพื้นที่เกิน */
-    overflow: auto;
-}
-
+    color: yellow;
+    background-color: black;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 320px;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
   }
+
+
 
   .lastinfo {
     background-color: black;
