@@ -311,7 +311,8 @@ body {
   .image-visual img,
   .image-figma img,
   .image-sql img {
-    width: 60%;
+    width: 50%;
+    max-width: 180px;
     height: auto;
     float: none;
     margin: 10px auto;
@@ -328,41 +329,40 @@ body {
     position: static;
     margin: 10px auto;
     display: block;
-    width: 60px;
+    width: 50px;
   }
 
   #main-img {
-    width: 100%;
-    max-width: 320px;
+    width: 90%;
+    max-width: 300px;
     margin: 0 auto;
     top: 0;
     position: static;
+    display: block;
   }
 
   .skill-text {
-    font-size: 24px;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    font-size: 22px;
     text-align: center;
     position: static;
-    margin-bottom: 20px;
+    margin: 20px auto;
   }
 
   .photogrid,
   .photogrid2 {
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 8px;
     padding: 10px;
     justify-items: center;
   }
 
   .photogrid img,
   .photogrid2 img {
-    width: 90%;
-    max-width: 300px;
+    width: 70%;
+    max-width: 240px;
     height: auto;
     margin: 0 auto;
+    display: block;
   }
 
   .modal-content {
@@ -377,10 +377,12 @@ body {
 
 
 
+
     
     
     
     
+
 
 
 
