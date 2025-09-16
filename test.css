@@ -334,6 +334,8 @@ body {
 
   #loading img {
     width: 200px;
+    text-align: center;
+    padding: 20px;
   }
 
   .loading-content p {
