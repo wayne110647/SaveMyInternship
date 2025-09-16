@@ -287,6 +287,60 @@ body {
   box-shadow: 0 5px 15px rgba(0,0,0,0.5); /* เงา */
   transition: transform 0.3s, box-shadow 0.3s;
 }
+@media screen and (max-width: 768px) {
+  /* ปรับภาพโปรไฟล์ */
+  #main-img {
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+    position: static;
+    top: 0;
+  }
+
+  .skill-text {
+    font-size: 24px;
+    text-align: center;
+    position: static;
+    margin: 20px auto;
+  }
+
+  /* ปรับภาพแต่ละใบให้เรียงแนวนอน */
+  .canva-img,
+  .visual-img,
+  .figma-img,
+  .sql-img,
+  .cisco-img,
+  .linux-img,
+  .kodular-img,
+  .premiere-img,
+  .word-img,
+  .powerpoint-img {
+    width: 60px;
+    height: auto;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+  }
+
+  /* ใส่ container ถ้าต้องการ scroll แนวนอน */
+  .icon-row {
+    white-space: nowrap;
+    overflow-x: auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .icon-row::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .icon-row::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.3);
+    border-radius: 3px;
+  }
+}
 
 
 
@@ -297,6 +351,7 @@ body {
     
     
     
+
 
 
 
