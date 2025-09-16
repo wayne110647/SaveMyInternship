@@ -105,7 +105,7 @@ body {
 }
 
 .photogrid img {
-    width: 100px;
+    width: 200px;
     border: 2px solid silver;
     outline: 4px solid #fff;
     display: block;
