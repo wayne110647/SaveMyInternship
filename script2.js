@@ -52,6 +52,15 @@ img.addEventListener('mouseout', () => {
   img.classList.remove('hover-img');
 });
 
+function checkOrientation() {
+  const isLandscape = window.innerWidth > window.innerHeight;
+  document.body.classList.toggle("landscape-lock", isLandscape);
+}
+
+window.addEventListener("resize", checkOrientation);
+window.addEventListener("load", checkOrientation);
+
+
 
 
 
