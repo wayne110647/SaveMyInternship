@@ -291,10 +291,12 @@ body {
 
 #main-img {
   position: absolute;
-  left: 20%; /* จากเดิม 50% */
-  transform: translateX(-50%);
-  top: -30%;
+  left: 50%; /* เปลี่ยนเป็นกึ่งกลางของ .home-image */
+  transform: translateX(-50%); /* ดันกลับครึ่งหนึ่งเพื่อกึ่งกลางพอดี */
+  top: 0; /* ปรับตำแหน่งจากด้านบนของ .home-image */
   z-index: 10;
+  max-width: 300px;
+  max-height: 400px;
 }
 
 .home-content {
@@ -631,6 +633,7 @@ body {
     
     
     
+
 
 
 
