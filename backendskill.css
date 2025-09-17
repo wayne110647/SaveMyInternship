@@ -369,7 +369,7 @@ body {
 
   .skill-text {
     font-size: 28px;
-    margin-top: 16px;
+    margin-top: -16px;
     text-align: center;
     position: static;
     transform: none;
@@ -457,6 +457,7 @@ body {
     
     
     
+
 
 
 
