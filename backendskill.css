@@ -296,13 +296,12 @@ body {
 #main-img {
   position: absolute;
   top: 0;
-  left: 0; /* จากเดิม 50% */
-  transform: translateX(-50%);
-  width: 80%;
+  left: 0;
+  width: 60%;
+  max-width: 400px;
   height: auto;
-  z-index: 10;
-  max-width: 300px;
 }
+
 
 .home-content {
   display: flex;
@@ -665,6 +664,7 @@ body {
     
     
     
+
 
 
 
