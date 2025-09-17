@@ -37,7 +37,7 @@ nav a:hover {
 
 nav li:hover{
     transform: scale(1.1);
-    transform: all 0.3s ease;
+    
 }
 
 body {
@@ -52,76 +52,7 @@ body {
 
 }
 
-.image-skill img {
-    width: 10%;
-    height: auto; /* รักษาสัดส่วน */
-    display: block; /* ลบช่องว่างรอบรูป */
-    position: relative;
-    float: right;
-    margin-right: 700px;
-    top: -800px;
-    cursor: pointer;
-}
 
-.image-visual img {
-    width: 20%;
-    height: auto; /* รักษาสัดส่วน */
-    display: block; /* ลบช่องว่างรอบรูป */
-    position: relative;
-    float: right;
-    margin-right: -700px;
-    top: -800px;
-    cursor: pointer;
-}
-
-.image-skill img:hover {
-  transform: scale(1.1);           /* ขยายเล็กน้อย */
-  box-shadow: 0 5px 15px rgba(0,0,0,0.5); /* เงา */
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.image-figma img{
-    width: 7%;
-    height: auto; /* รักษาสัดส่วน */
-    display: block; /* ลบช่องว่างรอบรูป */
-    position: relative;
-    float: right;
-    margin-right: -150px;
-    top: -500px;
-    cursor: pointer;
-
-    
-
-}
-.image-figma img:hover {
-  transform: scale(1.1);           /* ขยายเล็กน้อย */
-  box-shadow: 0 5px 15px rgba(0,0,0,0.5); /* เงา */
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.image-visual img:hover {
-  transform: scale(1.1);           /* ขยายเล็กน้อย */
-  box-shadow: 0 3px 10px rgba(0,0,0,0.5); /* เงา */
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-.image-sql img{
-    width: 10%;
-    height: auto; /* รักษาสัดส่วน */
-    display: block; /* ลบช่องว่างรอบรูป */
-    position: relative;
-    float: right;
-    margin-right: -600px;
-    top: -500px;
-
-}
-
-#main-img {
-    width: 800px; /* ปรับตามต้องการ */
-    height: auto; /* ให้สัดส่วนไม่บิดเบี้ยว */
-    transition: 0.3s; /* ทำให้เปลี่ยนขนาด/เปลี่ยนรูปนุ่มขึ้น */
-    top: -100px;
-    position: relative;
-}
 
 .skill-text {
      position: absolute;
@@ -136,66 +67,7 @@ body {
     
 }
 
-.image-cisco {
-    width: 80px;    /* ความกว้างบังคับเลย */
-    height: auto;   /* รักษาสัดส่วน */
-    position: absolute;  /* จะจัดตำแหน่งง่ายกว่า */
-    right: 20px;    /* ห่างจากขอบขวา */
-    top: 480px;      /* ห่างจากขอบบน */
-    margin-right: 400px;
 
-}
-
-.image-linux {
-    width: 80px;    /* ความกว้างบังคับเลย */
-    height: auto;   /* รักษาสัดส่วน */
-    position: absolute;  /* จะจัดตำแหน่งง่ายกว่า */
-    right: 20px;    /* ห่างจากขอบขวา */
-    top: 480px;      /* ห่างจากขอบบน */
-    margin-right: 300px;
-
-}
-
-.image-kodular {
-    width: 80px;    /* ความกว้างบังคับเลย */
-    height: auto;   /* รักษาสัดส่วน */
-    position: absolute;  /* จะจัดตำแหน่งง่ายกว่า */
-    right: 20px;    /* ห่างจากขอบขวา */
-    top: 480px;      /* ห่างจากขอบบน */
-    margin-right: 200px;
-
-}
-
-.image-premierpro {
-    width: 80px;    /* ความกว้างบังคับเลย */
-    height: auto;   /* รักษาสัดส่วน */
-    position: absolute;  /* จะจัดตำแหน่งง่ายกว่า */
-    right: 20px;    /* ห่างจากขอบขวา */
-    top: 480px;      /* ห่างจากขอบบน */
-    margin-right: 100px;
-
-}
-
-.image-word {
-    width: 80px;    /* ความกว้างบังคับเลย */
-    height: auto;   /* รักษาสัดส่วน */
-    position: absolute;  /* จะจัดตำแหน่งง่ายกว่า */
-    right: 20px;    /* ห่างจากขอบขวา */
-    top: 580px;      /* ห่างจากขอบบน */
-    margin-right: 400px;
-    cursor: pointer;
-
-}
-
-.image-powerpoint {
-    width: 80px;    /* ความกว้างบังคับเลย */
-    height: auto;   /* รักษาสัดส่วน */
-    position: absolute;  /* จะจัดตำแหน่งง่ายกว่า */
-    right: 20px;    /* ห่างจากขอบขวา */
-    top: 580px;      /* ห่างจากขอบบน */
-    margin-right: 300px;
-
-}
 
 .modal {
   position: fixed; 
@@ -287,59 +159,158 @@ body {
   box-shadow: 0 5px 15px rgba(0,0,0,0.5); /* เงา */
   transition: transform 0.3s, box-shadow 0.3s;
 }
-@media screen and (max-width: 768px) {
-  /* ปรับภาพโปรไฟล์ */
-  #main-img {
-    width: 90%;
-    max-width: 300px;
-    margin: 0 auto;
-    display: block;
-    position: static;
-    top: 0;
-  }
 
-  .skill-text {
-    font-size: 24px;
-    text-align: center;
-    position: static;
-    margin: 20px auto;
-  }
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 คอลัมน์ */
+  gap: 90px; /* ระยะห่างระหว่างภาพ */
+  justify-items: center; /* จัดภาพให้อยู่กลางช่อง */
+  align-items: center;
+  padding: 1%;
+  font-size: 0;
+  line-height: 0;
+  margin-left: 250px;
+  z-index: 1;
 
-  /* ปรับภาพแต่ละใบให้เรียงแนวนอน */
-  .canva-img,
-  .visual-img,
-  .figma-img,
-  .sql-img,
-  .cisco-img,
-  .linux-img,
-  .kodular-img,
-  .premiere-img,
-  .word-img,
-  .powerpoint-img {
-    width: 60px;
-    height: auto;
-    margin: 10px;
-    display: inline-block;
-    vertical-align: middle;
-    transition: transform 0.3s ease;
-  }
+}
 
-  /* ใส่ container ถ้าต้องการ scroll แนวนอน */
-  .icon-row {
-    white-space: nowrap;
-    overflow-x: auto;
-    padding: 10px;
-    text-align: center;
-  }
 
-  .icon-row::-webkit-scrollbar {
-    height: 6px;
-  }
+.skill-grid img {
+  width: 200px;
+  height: auto;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
 
-  .icon-row::-webkit-scrollbar-thumb {
-    background: rgba(255,255,255,0.3);
-    border-radius: 3px;
-  }
+.skill-grid img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.extra-skill-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 90px;
+  justify-items: center; /* จัดภาพให้อยู่กลางช่อง */
+  align-items: center;
+  padding: 6%;
+  font-size: 0;
+  line-height: 0;
+  margin-top: 16px;
+  margin-left: 250px;
+  z-index: 1;
+  
+
+
+}
+
+.extra-skill-grid img{
+  width: 60px;
+  height: auto;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+
+
+}
+
+.extra-skill-grid img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+
+.final-skill-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 16%;
+  justify-items: center; /* จัดภาพให้อยู่กลางช่อง */
+  align-items: center;
+  padding: 2%;
+  font-size: 0;
+  line-height: 0;
+  margin-left: 280px;
+  z-index: 1;
+
+}
+
+.final-skill-grid img{
+  width: 70px;
+  height: auto;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin: 0;
+  padding: 0px;
+  z-index: 1;
+  
+  
+  
+
+}
+.final-skill-grid img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+
+
+.home-image{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.two-column-layout {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  /* ระยะห่างระหว่าง grid */
+  padding-top: 200px; /* หรือ 60px ถ้าอยากให้ใกล้กว่านี้ */
+}
+
+#main-img {
+  position: absolute;
+  left: 20%; /* จากเดิม 50% */
+  transform: translateX(-50%);
+  top: -10%;
+  z-index: 10;
+}
+
+.home-content {
+  display: flex;
+  justify-content: space-between; /* หรือ flex-end */
+  align-items: flex-start;
+}
+
+.right-column {
+  padding-right: 280px; /* หรือ 60px ถ้าอยากให้ห่างกว่านี้ */
+}
+
+.item2 img {
+  width: 200px;
+  height: auto;
+}
+.item1 img {
+  width: 100px;
+  height: auto;
+}
+
+.item3 img {
+  width: 100px;
+  height: auto;
 }
 
 
@@ -347,11 +318,24 @@ body {
 
 
 
-    
-    
-    
-    
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
 
 
 
