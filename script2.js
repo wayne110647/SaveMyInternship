@@ -54,11 +54,7 @@ img.addEventListener('mouseout', () => {
 
 function checkOrientation() {
   if (window.innerWidth > window.innerHeight) {
-    document.body.style.pointerEvents = "none";
-    document.body.style.opacity = "0.3";
-  } else {
-    document.body.style.pointerEvents = "auto";
-    document.body.style.opacity = "1";
+    alert("กรุณาหมุนจอกลับเป็นแนวตั้งเพื่อใช้งานเว็บไซต์");
   }
 }
 
