@@ -54,12 +54,13 @@ img.addEventListener('mouseout', () => {
 
 function enforcePortraitOnlyMobile() {
   const isLandscape = window.innerWidth > window.innerHeight;
-  const isMobile = window.innerWidth <= 768;
+  const isMobileScreen = window.innerWidth <= 768;
+  const isMobileDevice = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
   const blockerId = "orientation-blocker";
   const existingBlocker = document.getElementById(blockerId);
 
-  if (isLandscape && isMobile) {
+  if (isLandscape && isMobileScreen && isMobileDevice) {
     if (!existingBlocker) {
       const blocker = document.createElement("div");
       blocker.id = blockerId;
@@ -89,6 +90,8 @@ function enforcePortraitOnlyMobile() {
 
 window.addEventListener("resize", enforcePortraitOnlyMobile);
 window.addEventListener("load", enforcePortraitOnlyMobile);
+
+
 
 
 
