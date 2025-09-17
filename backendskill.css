@@ -1,8 +1,6 @@
 html, body {
   overflow-x: hidden;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
+
 }
 nav ul {
     list-style: none;  /* เอาจุดออก */
@@ -55,7 +53,6 @@ body {
     background-repeat: no-repeat;
     color: white;
     font-size: large;
-    min-height: 100vh;
 
 }
 
@@ -178,7 +175,6 @@ body {
   line-height: 0;
   margin-left: 250px;
   z-index: 1;
-  margin-top:50px;
 
 }
 
@@ -268,13 +264,10 @@ body {
 
 
 .home-image{
-  position: relative;
-  width: 100%;
-  max-width: 300px;
-  margin: 0 auto; 
-  flex: 1;
-
-
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
 .two-column-layout {
   display: flex;
@@ -293,24 +286,17 @@ body {
 }
 
 #main-img {
-  position: relative;
-  display: block;
-  margin-left: 0;
-  margin-right: auto;
-  height: auto;
-  width: 100%;
-  height: auto;
-  
+  position: absolute;
+  left: 20%; /* จากเดิม 50% */
+  transform: translateX(-50%);
+  top: -10%;
+  z-index: 10;
 }
-
-
 
 .home-content {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between; /* หรือ flex-end */
   align-items: flex-start;
-  gap: 2rem;
-  padding: 2rem;
 }
 
 .right-column {
@@ -330,6 +316,34 @@ body {
   width: 100px;
   height: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+
+
+
+
 
 
 
@@ -613,6 +627,7 @@ body {
     
     
     
+
 
 
 
