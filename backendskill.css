@@ -409,7 +409,11 @@ body {
      margin: 10px auto; 
      width: 120px; 
      height: 120px;
-
+    border-radius: 50%;
+    border: 3px solid #ffd700; 
+    object-fit: cover; 
+    transform: none; 
+    position: static;
     }
 
 }
@@ -437,6 +441,7 @@ body {
     
     
     
+
 
 
 
