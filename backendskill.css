@@ -272,6 +272,9 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
+  position: relative;
+  max-width: 320px;
+  margin-left: 60px;
 }
 
 .two-column-layout {
@@ -292,9 +295,11 @@ body {
 
 #main-img {
   position: absolute;
-  left: 20%; /* จากเดิม 50% */
+  top: 0;
+  left: 0; /* จากเดิม 50% */
   transform: translateX(-50%);
-  top: -10%;
+  width: 100%;
+  height: auto;
   z-index: 10;
 }
 
@@ -659,6 +664,7 @@ body {
     
     
     
+
 
 
 
