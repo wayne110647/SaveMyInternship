@@ -314,6 +314,11 @@ body {
 }
 
 @media (max-width: 768px) {
+
+html, body {
+  overflow-x: hidden;
+}
+    
 .home-image {
  display: flex !important;
   width: 100%;
@@ -439,6 +444,8 @@ body {
   outline: 2px dashed red;
 }
 
+    
+
 
 
 }
@@ -466,6 +473,7 @@ body {
     
     
     
+
 
 
 
