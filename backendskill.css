@@ -298,9 +298,10 @@ body {
   top: 0;
   left: 0; /* จากเดิม 50% */
   transform: translateX(-50%);
-  width: 100%;
+  width: 80%;
   height: auto;
   z-index: 10;
+  max-width: 300px;
 }
 
 .home-content {
@@ -664,6 +665,7 @@ body {
     
     
     
+
 
 
 
