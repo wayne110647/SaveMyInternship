@@ -270,10 +270,9 @@ body {
 .home-image{
   position: relative;
   width: 100%;
-  max-width: 320px;
-  margin: 0 auto;
+  max-width: 430px;
   margin-left:30px;
-}
+
 
 .two-column-layout {
   display: flex;
@@ -608,6 +607,7 @@ body {
     
     
     
+
 
 
 
