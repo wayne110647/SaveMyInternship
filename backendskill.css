@@ -440,9 +440,18 @@ body {
 }
 
 @media screen and (orientation: landscape) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+  }
+
   body::before {
     content: "กรุณาหมุนจอกลับเป็นแนวตั้งเพื่อใช้งานเว็บไซต์";
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -451,18 +460,18 @@ body {
     background: white;
     color: red;
     font-size: 18px;
+    font-family: sans-serif;
     text-align: center;
-    padding-top: 40px;
     z-index: 9999;
   }
 
-  body > * {
+  body * {
     visibility: hidden;
   }
 }
 
 @media screen and (orientation: portrait) {
-  body > * {
+  body * {
     visibility: visible;
   }
 
@@ -475,6 +484,7 @@ body {
 
 
 
+
     
 
 
@@ -504,6 +514,7 @@ body {
     
     
     
+
 
 
 
