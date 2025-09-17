@@ -342,17 +342,18 @@ body {
     padding: 0;
   }
 
-  #main-img {
-    position: static;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 3px solid #ffd700;
-    object-fit: cover;
-    margin: 16px auto;
-    transform: none;
-    display:block;
-  }
+#main-img {
+  display: block;
+  margin: 16px auto;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #ffd700;
+  object-fit: cover;
+  transform: none;
+  position: static;
+}
+
 
   .skill-text {
     font-size: 28px;
@@ -434,6 +435,7 @@ body {
     
     
     
+
 
 
 
