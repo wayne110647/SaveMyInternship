@@ -415,7 +415,7 @@ body {
   position: static;               /* อยู่ใน flow ปกติ */
   transform: none;                /* ล้างการลอยหรือเบี้ยว */
   box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* เพิ่มเงาเบา ๆ ให้ดูมีมิติ */
-    margin-right: 12px
+    margin-right: 300px
 }
 
 
@@ -444,6 +444,7 @@ body {
     
     
     
+
 
 
 
