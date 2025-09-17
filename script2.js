@@ -51,3 +51,11 @@ img.addEventListener('mouseout', () => {
   img.src = "images/ปั๊มskill1-Photoroom.png";
   img.classList.remove('hover-img');
 });
+
+window.addEventListener("orientationchange", function() {
+  if (window.orientation !== 0) {
+    alert("กรุณาหมุนจอกลับเป็นแนวตั้งเพื่อใช้งานเว็บไซต์");
+  }
+});
+
+
