@@ -52,13 +52,42 @@ img.addEventListener('mouseout', () => {
   img.classList.remove('hover-img');
 });
 
-function checkOrientation() {
+function enforcePortraitOnly() {
   const isLandscape = window.innerWidth > window.innerHeight;
-  document.body.classList.toggle("landscape-lock", isLandscape);
+
+  if (isLandscape) {
+    // สร้าง overlay เตือน
+    const blocker = document.createElement("div");
+    blocker.id = "orientation-blocker";
+    blocker.style.position = "fixed";
+    blocker.style.top = "0";
+    blocker.style.left = "0";
+    blocker.style.width = "100vw";
+    blocker.style.height = "100vh";
+    blocker.style.background = "white";
+    blocker.style.color = "red";
+    blocker.style.fontSize = "18px";
+    blocker.style.fontFamily = "sans-serif";
+    blocker.style.display = "flex";
+    blocker.style.justifyContent = "center";
+    blocker.style.alignItems = "center";
+    blocker.style.zIndex = "9999";
+    blocker.innerText = "กรุณาหมุนจอกลับเป็นแนวตั้งเพื่อใช้งานเว็บไซต์";
+
+    // ซ่อนเนื้อหาเว็บ
+    document.body.style.visibility = "hidden";
+    document.body.appendChild(blocker);
+  } else {
+    // ลบ blocker และคืนเนื้อหา
+    const blocker = document.getElementById("orientation-blocker");
+    if (blocker) blocker.remove();
+    document.body.style.visibility = "visible";
+  }
 }
 
-window.addEventListener("resize", checkOrientation);
-window.addEventListener("load", checkOrientation);
+window.addEventListener("resize", enforcePortraitOnly);
+window.addEventListener("load", enforcePortraitOnly);
+
 
 
 
