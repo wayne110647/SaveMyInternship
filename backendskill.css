@@ -341,7 +341,7 @@ body {
     position: static;
     width: 180px;
     margin-bottom: 20px;
-    transform: none;
+    transform: scale(1.02); 
   }
 
   .right-column {
@@ -401,6 +401,7 @@ body {
     
     
     
+
 
 
 
