@@ -435,16 +435,11 @@ body {
 }
 
 .right-column {
-  margin-top: -58px;
+  margin-top: -150px;
 }
 
 
-.home-image {
-  outline: 2px dashed blue;
-}
-#main-img {
-  outline: 2px dashed red;
-}
+
 
     
 
@@ -475,6 +470,7 @@ body {
     
     
     
+
 
 
 
