@@ -1,5 +1,8 @@
 html, body {
   overflow-x: hidden;
+   min-height: 100vh; 
+  margin: 0; 
+  padding: 0;
 }
 
 
@@ -269,10 +272,6 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
-  position: relative;
-  width: 100%;
-  max-width: 320px;
-  margin-left: 60px;
 }
 
 .two-column-layout {
@@ -293,12 +292,10 @@ body {
 
 #main-img {
   position: absolute;
-  left: 50%; /* เปลี่ยนเป็นกึ่งกลางของ .home-image */
-  transform: translateX(-50%); /* ดันกลับครึ่งหนึ่งเพื่อกึ่งกลางพอดี */
-  top: 0; /* ปรับตำแหน่งจากด้านบนของ .home-image */
+  left: 20%; /* จากเดิม 50% */
+  transform: translateX(-50%);
+  top: -10%;
   z-index: 10;
-  max-width: 300px;
-  max-height: 400px;
 }
 
 .home-content {
@@ -324,6 +321,33 @@ body {
   width: 100px;
   height: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+
+
+
 
 
 
@@ -635,6 +659,7 @@ body {
     
     
     
+
 
 
 
