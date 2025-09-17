@@ -356,14 +356,20 @@ body {
     align-items: center;
   }
 
-  .skill-grid,
-  .extra-skill-grid,
-  .final-skill-grid {
+  .skill-grid{
     margin-left: 0;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     padding: 4%;
   }
+.extra-skill-grid{
+.final-skill-grid,
+     grid-template-columns: repeat(4, 1fr);
+    margin-left: 0;
+    gap: 40px;
+    padding: 4%;
+} 
+    
 
   .skill-grid img {
     width: 140px;
@@ -406,6 +412,7 @@ body {
     
     
     
+
 
 
 
