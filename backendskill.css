@@ -362,13 +362,21 @@ body {
     gap: 40px;
     padding: 4%;
   }
-.extra-skill-grid{
-.final-skill-grid,
-     grid-template-columns: repeat(4, 1fr);
-    margin-left: 0;
-    gap: 40px;
+  .extra-skill-grid,
+  .final-skill-grid {
+    grid-template-columns: repeat(2, 1fr); /* จาก 4 เป็น 2 คอลัมน์ */
+    margin-left: 0; /* ล้าง margin ที่ทำให้เบี้ยว */
+    gap: 24px; /* ลดระยะห่างให้พอดีกับจอเล็ก */
     padding: 4%;
-} 
+    justify-items: center;
+    align-items: center;
+  }
+
+  .extra-skill-grid img,
+  .final-skill-grid img {
+    width: 60px; /* ปรับขนาดรูปให้พอดีมือถือ */
+  }
+}
     
 
   .skill-grid img {
@@ -412,6 +420,7 @@ body {
     
     
     
+
 
 
 
