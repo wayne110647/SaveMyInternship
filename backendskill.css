@@ -52,6 +52,10 @@ body {
     background-repeat: no-repeat;
     color: white;
     font-size: large;
+    min-height: 100vh;   /* ให้ background เต็มจอ */
+    margin: 0;           /* ตัด margin เริ่มต้นออก */
+    padding: 0;
+}
 
 }
 
@@ -285,11 +289,12 @@ body {
 }
 
 #main-img {
-  position: absolute;
-  left: 20%; /* จากเดิม 50% */
-  transform: translateX(-50%);
-  top: -10%;
-  z-index: 10;
+  position: relative;  /* แทน absolute */
+  top: 0;
+  left: 0;
+  transform: none;
+  margin: 0 auto;
+  display: block;
 }
 
 .home-content {
@@ -597,6 +602,7 @@ body {
     
     
     
+
 
 
 
