@@ -406,7 +406,7 @@ body {
 
 #main-img {
   display: block;                  /* ทำให้ margin: auto ใช้ได้กับ img */
-  margin: 24px auto;               /* จัดให้อยู่กลางแนวนอน */
+  margin: 16px auto;               /* จัดให้อยู่กลางแนวนอน */
   width: 120px;                    /* ขนาดพอดีมือถือ */
   height: 120px;
   border-radius: 50%;             /* ทำให้เป็นวงกลม */
@@ -443,6 +443,7 @@ body {
     
     
     
+
 
 
 
