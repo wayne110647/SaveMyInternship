@@ -55,6 +55,7 @@ body {
     background-repeat: no-repeat;
     color: white;
     font-size: large;
+    min-height: 100vh;
 
 }
 
@@ -602,6 +603,7 @@ body {
     
     
     
+
 
 
 
