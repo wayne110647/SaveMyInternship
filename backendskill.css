@@ -373,8 +373,9 @@ body {
     margin-bottom: 24px;
   }
 
-  .extra-skill-grid,
-  .final-skill-grid {
+    .skill-grid,
+    .extra-skill-grid,
+    .final-skill-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
@@ -385,6 +386,7 @@ body {
     margin-left: 0;
   }
 
+  .skill-grid img,
   .extra-skill-grid img,
   .final-skill-grid img {
     background-color: #ffd700;
@@ -431,6 +433,7 @@ body {
     
     
     
+
 
 
 
