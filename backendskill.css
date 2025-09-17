@@ -440,33 +440,110 @@ body {
 }
 
 @media screen and (orientation: landscape) and (max-width: 768px) {
-  html, body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    overflow: hidden;
+  body {
+    font-size: 15px;
+    background-color: #0b8f3f;
+    background-image: radial-gradient(#fff700 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: center;
+    padding: 8px 24px;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
   }
 
-  body::before {
-    content: "กรุณาหมุนจอกลับเป็นแนวตั้งเพื่อใช้งานเว็บไซต์";
+  .home-image {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: white;
-    color: red;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+  }
+
+  #main-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #ffd700;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    margin: 0;
+  }
+
+  .name {
     font-size: 18px;
-    font-family: sans-serif;
-    text-align: center;
-    z-index: 9999;
+    font-weight: bold;
+    margin-top: 0;
   }
 
-  body * {
-    visibility: hidden;
+  .tagline {
+    font-size: 13px;
+    color: #ffd700;
+    margin-bottom: 16px;
+  }
+
+  .skill-text {
+    font-size: 16px;
+    margin-top: 0;
+    text-align: left;
+    padding: 0 8px;
+  }
+
+  .skill-grid,
+  .extra-skill-grid,
+  .final-skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 16px;
+    padding: 0 16px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .skill-grid img,
+  .extra-skill-grid img,
+  .final-skill-grid img {
+    width: 64px;
+    height: 64px;
+    padding: 8px;
+    border-radius: 12px;
+    background-color: #ffd700;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+  }
+
+  .extra-skill-grid img:hover,
+  .final-skill-grid img:hover {
+    transform: scale(1.08);
+  }
+
+  .modal-content {
+    margin: 10% auto;
+    padding: 16px;
+    border-radius: 10px;
+    max-width: 95vw;
+    box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    background-color: rgb(132, 224, 144);
+    text-align: left;
+  }
+
+  .right-column {
+    margin-top: 0;
+    margin-left: 0;
+    padding: 0 16px;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    padding: 8px 0;
+  }
+
+  .navbar {
+    padding: 0.5rem 0;
   }
 }
 
@@ -476,6 +553,7 @@ body {
 
 
 
+
     
 
 
@@ -505,6 +583,7 @@ body {
     
     
     
+
 
 
 
