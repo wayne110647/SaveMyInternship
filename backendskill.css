@@ -439,7 +439,7 @@ body {
   margin-left: 32px;
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-width: 768px) {
   html, body {
     margin: 0;
     padding: 0;
@@ -470,15 +470,6 @@ body {
   }
 }
 
-@media screen and (orientation: portrait) {
-  body * {
-    visibility: visible;
-  }
-
-  body::before {
-    content: none;
-  }
-}
 
 
 
@@ -514,6 +505,7 @@ body {
     
     
     
+
 
 
 
