@@ -440,6 +440,11 @@ body {
 }
 
 @media screen and (orientation: landscape) {
+  body {
+    pointer-events: none;
+    opacity: 0.3;
+  }
+
   body::before {
     content: "กรุณาหมุนจอกลับเป็นแนวตั้งเพื่อใช้งานเว็บไซต์";
     display: block;
@@ -455,8 +460,6 @@ body {
     padding-top: 40px;
     z-index: 9999;
   }
-
- 
 }
 
 
@@ -492,6 +495,7 @@ body {
     
     
     
+
 
 
 
