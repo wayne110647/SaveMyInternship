@@ -341,10 +341,10 @@ body {
     position: static;
     width: 180px;
     margin-bottom: 20px;
-    transform: scale(1.02); 
+    transform: scale(1.0); 
   }
     #main-img:hover {
-    transform: scale(1.02); 
+    transform: scale(1.0); 
     box-shadow: none;
   }
 
@@ -406,6 +406,7 @@ body {
     
     
     
+
 
 
 
