@@ -52,14 +52,8 @@ img.addEventListener('mouseout', () => {
   img.classList.remove('hover-img');
 });
 
-function checkOrientation() {
-  if (window.innerWidth > window.innerHeight) {
-    alert("กรุณาหมุนจอกลับเป็นแนวตั้งเพื่อใช้งานเว็บไซต์");
-  }
-}
 
-window.addEventListener("resize", checkOrientation);
-window.addEventListener("load", checkOrientation);
+
 
 
 
