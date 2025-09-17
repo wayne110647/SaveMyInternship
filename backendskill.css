@@ -439,7 +439,11 @@ body {
   margin-left: 32px;
 }
 
-
+@media screen and (orientation: landscape) {
+  body {
+    display: none;
+  }
+}
 
 
     
@@ -471,6 +475,7 @@ body {
     
     
     
+
 
 
 
