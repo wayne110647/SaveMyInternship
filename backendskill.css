@@ -351,6 +351,7 @@ body {
     object-fit: cover;
     margin: 16px auto;
     transform: none;
+    display:block;
   }
 
   .skill-text {
@@ -433,6 +434,7 @@ body {
     
     
     
+
 
 
 
