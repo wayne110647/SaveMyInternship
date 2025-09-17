@@ -384,6 +384,7 @@ body {
       .final-skill-grid img {
     width: 50px; /* ปรับขนาดรูปให้พอดีมือถือ */
     height: auto;
+    margin-left: 8px;
   }
 
     
@@ -429,6 +430,7 @@ body {
     
     
     
+
 
 
 
