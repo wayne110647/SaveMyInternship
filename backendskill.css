@@ -418,10 +418,18 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   }
 
-  .modal-content {
-    width: 90%;
-    margin: auto;
-  }
+.modal-content {
+  background-color: rgb(132, 224, 144);
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 90vw;       /* ปรับให้ไม่เกิน 90% ของหน้าจอ */
+  width: 100%;
+  box-sizing: border-box; /* ป้องกัน padding ทำให้ล้น */
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  text-align: left;
+}
+
 
 
 .home-image {
@@ -458,6 +466,7 @@ body {
     
     
     
+
 
 
 
