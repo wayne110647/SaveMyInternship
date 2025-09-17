@@ -24,18 +24,30 @@ function closeModal() {
 }
 
 img.addEventListener('mouseover', () => {
-    img.src = "images/ปั๊มskill1-Photoroom.png";
-    img.classList.add('hover-img')
-     img.src="images/ปั๊มskill2-Photoroom.png";
-            img.style.width = '800px';
-            sound.currentTime = 0;
-            sound.play();
-            setTimeout(() => {
-            sound.pause();
-            }, 4000);
+  if (window.innerWidth > 768) {
+    img.src = "images/ปั๊มskill2-Photoroom.png";
+    img.classList.add('hover-img');
+    sound.currentTime = 0;
+    sound.play();
+    setTimeout(() => {
+      sound.pause();
+    }, 4000);
+  }
 });
 
+// สำหรับมือถือ
+img.addEventListener('touchstart', () => {
+  img.src = "images/ปั๊มskill2-Photoroom.png";
+  img.classList.add('hover-img');
+  sound.currentTime = 0;
+  sound.play();
+  setTimeout(() => {
+    sound.pause();
+  }, 4000);
+});
+
+// กลับเป็นรูปเดิม
 img.addEventListener('mouseout', () => {
-    img.src = "images/ปั๊มskill1-Photoroom.png";
-    img.classList.add('hover-img')
+  img.src = "images/ปั๊มskill1-Photoroom.png";
+  img.classList.remove('hover-img');
 });
