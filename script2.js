@@ -52,10 +52,18 @@ img.addEventListener('mouseout', () => {
   img.classList.remove('hover-img');
 });
 
-window.addEventListener("orientationchange", function() {
-  if (window.orientation !== 0) {
-    alert("กรุณาหมุนจอกลับเป็นแนวตั้งเพื่อใช้งานเว็บไซต์");
+function checkOrientation() {
+  if (window.innerWidth > window.innerHeight) {
+    document.body.innerHTML = `
+      <div style="padding:40px; text-align:center; font-size:18px;">
+        กรุณาหมุนจอกลับเป็นแนวตั้งเพื่อใช้งานเว็บไซต์
+      </div>
+    `;
   }
-});
+}
+
+window.addEventListener("resize", checkOrientation);
+window.addEventListener("load", checkOrientation);
+
 
 
