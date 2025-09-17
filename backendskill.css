@@ -405,20 +405,42 @@ body {
 }
 
 #main-img {
-  display: block;                  /* ทำให้ margin: auto ใช้ได้กับ img */
-  margin: 16px auto;               /* จัดให้อยู่กลางแนวนอน */
-  width: 120px;                    /* ขนาดพอดีมือถือ */
+  display: block;
+  margin: 16px auto;
+  width: 120px;
   height: 120px;
-  border-radius: 50%;             /* ทำให้เป็นวงกลม */
-  border: 3px solid #ffd700;      /* กรอบสีทอง */
-  object-fit: cover;              /* ตัดขอบให้พอดี */
-  position: static;               /* อยู่ใน flow ปกติ */
-  transform: none;                /* ล้างการลอยหรือเบี้ยว */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* เพิ่มเงาเบา ๆ ให้ดูมีมิติ */
-    margin-right: 300px
+  border-radius: 50%;
+  border: 3px solid #ffd700;
+  object-fit: cover;
+  position: static;
+  transform: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+ 
+}
+
+.home-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.two-column-layout {
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.home-image {
+  outline: 2px dashed blue;
+}
+#main-img {
+  outline: 2px dashed red;
 }
 
 
+
 }
 
 
@@ -444,6 +466,7 @@ body {
     
     
     
+
 
 
 
