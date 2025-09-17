@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChutipongAiengpranee</title>
-    <link rel="stylesheet" href="backendskill.css">
+    <link rel="stylesheet" href="fix.css">
     <script src="script2.js" defer></script>
 
 </head>
@@ -28,62 +28,66 @@
 
     <!--กลางเว็ป-->
 
-    <section id="home" class="home-section">
-        <div class="home-content"> 
+    <section class="skills-section">
+        <div class="home-content two-column-layout">
+          <!--รูปใหญ่-->
             <div class="home-image">
                 <img id="main-img" src="images/ปั๊มskill1-Photoroom.png">
                 <audio id='hover-sound' src="music/เฮ้ยแท้จริงๆ.mp3"preload="auto"></audio>
             </div>
-        
+            
+            <!--ส่วนความสามารถ-->
+        <div class="right-column">
         <div class="skill-text">
             <h1>ความสามารถ</h1>
             
         </div>
-            
-             <div class="image-skill">
-                
-                <img src="images/canva.png" alt="โลโก้แคนวา" onclick="openModal('Canva', 5,'ออกแบบโปสเตอร์, อินโฟกราฟิก, งานนำเสนอ')">
-                          
         
-       
-        <div class="image-visual">
-            <img src="images/Visual-Studio-Logo-2019.png" alt="โลโก้วิชเชิล"onclick="openModal('Visual-studio', 4, 'Java css html python ในระดับพื้นฐาน')">
-            
-        </div>
-
-        <div class="image-figma">
-            <img src="images/Figma-logo.svg.png"onclick="openModal('Figma', 4, 'สามารถใช้งานได้ระดับพื้นฐาน')">
-        </div>
-
-        <div class="image-sql">
-            <img src="images/microsoft-sql-server-logo.svg"onclick="openModal('SQLSERVER', 2, 'ไม่ค่อยชำนาญแต่พร้อมเรียนรู้ครับ')">
-        </div>
-
-        <div class="image-cisco">
-            <img src="images/cisco-packet-tracer.png" class="image-cisco"onclick="openModal('Ciscopacket', 2, 'ได้ศึกษาในการวางระบบเครือข่ายแต่เนื่องจากไม่ใช่วิชาหลักเลยไม่ชำนาญครับ')">
-        </div>
-
-        <div class="image-linux">
-            <img src="images/linux.png" class="image-linux"onclick="openModal('linux', 3, 'เคยได้ศึกษา cybersecurity ในระดับเบื้องต้นครับ')">
-        </div>
-
-        <div class="image-kodular">
-            <img src="images/kodular.png" class="image-kodular"onclick="openModal('kodular', 4, 'เคยศึกษาในระดับปวชครับ')">
-        </div>
-
-        <div class="image-premierpro">
-            <img src="images/Adobe_Premiere_Pro_CC_icon.svg.png" class="image-premierpro"onclick="openModal('linux', 4, 'สามารถตัดคลิปผ่านโปรแกรมนี้ได้ครับ')">
-        </div>
-
-        <div class="image-word">
-            <img src="images/Microsoft_Office_Word_(2019–present).svg.png" class="image-word"onclick="openModal('WORD', 4, 'ใช้wordได้ในระดับพื้นฐานครับ')">
-        </div>
-
-        <div class="image-powerpoint">
-            <img src="images/Microsoft_PowerPoint_Logo.png" class="image-powerpoint"onclick="openModal('Powerpoint', 4, 'ใช้ได้ในระดับพื้นฐาน')">
-        </div>
-       
+        
+        <!--Gridแรก-->
+<div class="skill-grid">
+    <div class="item item1">
+      <img src="images/canva.png" alt="โลโก้แคนวา" onclick="openModal('Canva', 5,'ออกแบบโปสเตอร์, อินโฟกราฟิก, งานนำเสนอ')">
+  </div>
+    <div class="item item2">
+      <img src="images/Visual-Studio-Logo-2019.png" alt="โลโก้วิชเชิล" onclick="openModal('Visual-studio', 4, 'Java css html python ในระดับพื้นฐาน')">
+    </div>
+  <div class="item item3">
+    <img src="images/Figma-logo.svg.png" alt="โลโก้ฟิกม่า" onclick="openModal('Figma', 4, 'สามารถใช้งานได้ระดับพื้นฐาน')">
+  </div>
+  <div class="item item4">
+    <img src="images/microsoft-sql-server-logo.svg" alt="โลโก้ SQL Server" onclick="openModal('SQLSERVER', 2, 'ไม่ค่อยชำนาญแต่พร้อมเรียนรู้ครับ')">
+  </div>
 </div>
+
+
+<div class="extra-skill-grid">
+  <div>
+    <img src="images/cisco-packet-tracer.png" alt="โลโก้ Cisco" onclick="openModal('Ciscopacket', 2, 'ได้ศึกษาในการวางระบบเครือข่ายแต่เนื่องจากไม่ใช่วิชาหลักเลยไม่ชำนาญครับ')">
+  </div>
+  <div>
+    <img src="images/linux.png" alt="โลโก้ Linux" onclick="openModal('linux', 3, 'เคยได้ศึกษา cybersecurity ในระดับเบื้องต้นครับ')">
+  </div>
+  <div>
+    <img src="images/kodular.png" alt="โลโก้ Kodular" onclick="openModal('kodular', 4, 'เคยศึกษาในระดับปวชครับ')">
+  </div>
+  <div>
+    <img src="images/Adobe_Premiere_Pro_CC_icon.svg.png" alt="โลโก้ Premiere Pro" onclick="openModal('linux', 4, 'สามารถตัดคลิปผ่านโปรแกรมนี้ได้ครับ')">
+  </div>
+</div>
+
+       <!-- Grid สุดท้าย -->
+<div class="final-skill-grid">
+  <div>
+    <img src="images/Microsoft_Office_Word_(2019–present).svg.png" alt="โลโก้ Word" onclick="openModal('WORD', 4, 'ใช้wordได้ในระดับพื้นฐานครับ')">
+  </div>
+  <div>
+    <img src="images/Microsoft_PowerPoint_Logo.png" alt="โลโก้ PowerPoint" onclick="openModal('Powerpoint', 4, 'ใช้ได้ในระดับพื้นฐาน')">
+  </div>
+</div>
+</div>
+</div>
+
     <div id="skillModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
@@ -93,9 +97,8 @@
         </div>
     </div>
 
-            
+         </div>   
         </div>
-            
     </section>
 
     <script>
@@ -126,5 +129,3 @@
 
 </body>
 </html>
-
-
