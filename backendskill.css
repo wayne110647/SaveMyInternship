@@ -364,7 +364,7 @@ body {
   }
   .extra-skill-grid,
   .final-skill-grid {
-    grid-template-columns: repeat(2, 1fr); /* จาก 4 เป็น 2 คอลัมน์ */
+    grid-template-columns: repeat(4, 1fr); /* จาก 4 เป็น 2 คอลัมน์ */
     margin-left: 0; /* ล้าง margin ที่ทำให้เบี้ยว */
     gap: 24px; /* ลดระยะห่างให้พอดีกับจอเล็ก */
     padding: 4%;
@@ -420,6 +420,7 @@ body {
     
     
     
+
 
 
 
