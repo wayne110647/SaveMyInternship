@@ -53,20 +53,19 @@ img.addEventListener('mouseout', () => {
 });
 
 function checkOrientation() {
-  const warning = document.getElementById("orientation-warning");
-  const content = document.getElementById("main-content");
-
   if (window.innerWidth > window.innerHeight) {
-    warning.style.display = "block";
-    content.style.display = "none";
+    document.body.style.pointerEvents = "none";
+    document.body.style.opacity = "0.3";
   } else {
-    warning.style.display = "none";
-    content.style.display = "block";
+    document.body.style.pointerEvents = "auto";
+    document.body.style.opacity = "1";
   }
 }
 
 window.addEventListener("resize", checkOrientation);
 window.addEventListener("load", checkOrientation);
+
+
 
 
 
