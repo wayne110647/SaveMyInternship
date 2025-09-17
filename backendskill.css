@@ -376,12 +376,16 @@ body {
     
 
 
-  .extra-skill-grid img,
-  .final-skill-grid img {
+  .extra-skill-grid img {
     width: 60px; /* ปรับขนาดรูปให้พอดีมือถือ */
     height: auto;
   }
-}
+
+      .final-skill-grid img {
+    width: 50px; /* ปรับขนาดรูปให้พอดีมือถือ */
+    height: auto;
+  }
+
     
 
   .skill-grid img {
@@ -425,6 +429,7 @@ body {
     
     
     
+
 
 
 
