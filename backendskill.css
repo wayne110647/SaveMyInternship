@@ -440,11 +440,22 @@ body {
 }
 
 @media screen and (orientation: landscape) {
-  body {
+  body::before {
+    content: "กรุณาหมุนจอกลับเป็นแนวตั้งเพื่อใช้งานเว็บไซต์";
+    display: block;
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+    color: red;
+  }
+
+  .main-content {
     display: none;
   }
 }
 
+}
+
 
     
 
@@ -475,6 +486,7 @@ body {
     
     
     
+
 
 
 
