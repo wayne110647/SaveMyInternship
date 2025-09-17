@@ -273,7 +273,7 @@ body {
   align-items: center;
   gap: 20px;
   position: relative;
-  max-width: 320px;
+  max-width: 400px;
   margin-left: 60px;
 }
 
@@ -297,9 +297,10 @@ body {
   position: relative;
   top: 0;
   left: 0;
-  width: 60%;
-  max-width: 400px;
+  width: 100%;
+  max-width: 100%;
   height: auto;
+  display:block;
 }
 
 
@@ -664,6 +665,7 @@ body {
     
     
     
+
 
 
 
