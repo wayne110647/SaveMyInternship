@@ -443,27 +443,35 @@ body {
   body::before {
     content: "กรุณาหมุนจอกลับเป็นแนวตั้งเพื่อใช้งานเว็บไซต์";
     display: block;
-    text-align: center;
-    padding: 40px;
-    font-size: 18px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: white;
     color: red;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 40px;
+    z-index: 9999;
   }
 
-  .main-content {
-    display: none;
+  body > * {
+    visibility: hidden;
   }
 }
 
-}
-
-
-    
-
-
 
 }
 
 
+    
+
+
+
+}
+
+
 
 
 
@@ -486,6 +494,7 @@ body {
     
     
     
+
 
 
 
