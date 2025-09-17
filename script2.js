@@ -53,17 +53,22 @@ img.addEventListener('mouseout', () => {
 });
 
 function checkOrientation() {
+  const warning = document.getElementById("orientation-warning");
+  const content = document.getElementById("main-content");
+
   if (window.innerWidth > window.innerHeight) {
-    document.body.innerHTML = `
-      <div style="padding:40px; text-align:center; font-size:18px;">
-        กรุณาหมุนจอกลับเป็นแนวตั้งเพื่อใช้งานเว็บไซต์
-      </div>
-    `;
+    warning.style.display = "block";
+    content.style.display = "none";
+  } else {
+    warning.style.display = "none";
+    content.style.display = "block";
   }
 }
 
 window.addEventListener("resize", checkOrientation);
 window.addEventListener("load", checkOrientation);
+
+
 
 
 
