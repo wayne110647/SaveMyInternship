@@ -270,8 +270,10 @@ body {
 .home-image{
   position: relative;
   width: 100%;
-  max-width: 600px;
+  max-width: 300px;
   margin: 0 auto; 
+  flex: 1;
+
 
 
 .two-column-layout {
@@ -296,15 +298,19 @@ body {
   margin-left: 0;
   margin-right: auto;
   height: auto;
-  width: 400px;
+  width: 100%;
+  height: auto;
+  
 }
 
 
 
 .home-content {
   display: flex;
-  justify-content: space-between; /* หรือ flex-end */
+  flex-wrap: wrap;
   align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
 }
 
 .right-column {
@@ -607,6 +613,7 @@ body {
     
     
     
+
 
 
 
