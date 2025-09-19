@@ -1,7 +1,7 @@
 nav ul {
-    list-style: none;  /* เอาจุดออก */
-    display: flex; /*ทำให้เป็นแนวนอน*/
-    justify-content: space-around; /*จัดให้อยู่ตรงกลาง*/
+    list-style: none;  
+    display: flex; 
+    justify-content: space-around; 
     gap: 2rem; /*เว้นระยะห่าง*/
     margin: 0;
     padding: 0;
@@ -9,35 +9,53 @@ nav ul {
 }
 
 nav a {
-    text-decoration: none; /*เอาเส้นใต้ลิงค์ออก*/
-    color:rgb(0, 0, 0);
+    text-decoration: none; 
+    color:rgb(255, 255, 255);
     font-weight: bold;
+    position: relative;
+  transition: color 0.3s ease;
 
 
 }
 
 .navbar{
 
-    background-color: azure;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
      padding: 1rem;
-     position: sticky; /* ติดบนเวลาเลื่อน */
-     top: 1%; /* ระยะห่างจากบนสุดของหน้าจอ */
-     z-index: 1000; /* ให้แน่ใจว่าอยู่บนทุกอย่าง */
+     position: sticky; 
+     top: 1%; 
+     z-index: 1000; 
+     
     
 
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #ffd700;
+  transition: width 0.3s ease;
 }
 
 
 nav a:hover {
 
-    color: #c08a8a;
+    color: #000000;
+    width: 100%;
    
 
 }
 
 nav li:hover{
     transform: scale(1.1);
-    transform: all 0.3s ease;
+    
 }
 
 body {
@@ -312,6 +330,7 @@ body {
     font-size: 1em;
   }
 }
+
 
 
 
