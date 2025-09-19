@@ -228,6 +228,49 @@ body {
   100% { opacity: 0.2; }
 }
 
+.mood-switcher {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+#profile-img {
+  width: 200px;
+  height: auto;
+  border-radius: 0; 
+  border: 6px solid #ffffff; 
+  box-shadow: 0 0 0 4px gold; 
+  transition: all 0.3s ease;
+}
+
+.mood-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mood-buttons button {
+  background-color: #ffd700;
+  color: #000;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.mood-buttons button:hover {
+  transform: scale(1.05);
+  background-color: #ffcc00;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
 @media (max-width: 768px) {
   * {
     box-sizing: border-box;
@@ -330,6 +373,7 @@ body {
     font-size: 1em;
   }
 }
+
 
 
 
