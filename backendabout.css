@@ -152,11 +152,17 @@ body {
 
 @media screen and (max-width: 768px) {
 
-  /* ปรับ navbar */
-  .navbar {
+.navbar {
     padding: 0.5rem;
     top: 0;
     border-radius: 8px;
+    color: black; /* ข้อความ navbar เป็นดำ */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+  }
+
+  nav a {
+    color: black; /* ลิงก์เป็นดำ */
   }
 
   nav ul {
@@ -170,10 +176,9 @@ body {
   }
 
   nav a:hover {
-    color: #000000;
-    /* width ปล่อยเป็น auto หรือไม่ต้องกำหนดก็ได้ */
+    color: #333333; /* hover ให้เข้มขึ้นเล็กน้อย */
   }
-
+}
   /* ปรับ home content ให้เป็นแนวตั้ง */
   .home-content {
     flex-direction: column;
@@ -232,6 +237,7 @@ body {
   }
 
 }
+
 
 
 
