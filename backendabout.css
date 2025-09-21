@@ -157,7 +157,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: white;
+    color: black;
     text-align: center;
   }
 
@@ -232,6 +232,7 @@ body {
     padding: 0 8px;
   }
 }
+
 
 
 
