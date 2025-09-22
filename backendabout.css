@@ -219,6 +219,7 @@ body {
   text-align: center;
   margin-top: 4px !important; /* ดันข้อความลงจากรูป */
   padding-top: 0 !important;
+  font-size: smaill;
 }
 
 
@@ -233,6 +234,7 @@ body {
     display: none;
 }
 }
+
 
 
 
