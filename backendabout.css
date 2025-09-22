@@ -156,7 +156,7 @@ body {
     padding: 0.5rem;
     top: 0;
     border-radius: 8px;
-    color: black; /* ข้อความ navbar เป็นดำ */
+    color: white; /* ข้อความ navbar เป็นดำ */
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
   }
@@ -237,6 +237,7 @@ body {
   }
 
 }
+
 
 
 
