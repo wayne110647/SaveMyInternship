@@ -217,12 +217,13 @@ body {
 
   /* ข้อความใต้รูป */
   .home-text {
-    text-align: center;
+    text-align: justify;
     margin-top: -150px !important;
     padding-top: 0 !important;
     margin-bottom: 0px !important;
     border: 1px solid red;
     border: 1px dashed blue;
+    
 }
 
   }
@@ -249,6 +250,7 @@ body {
 
 
 }
+
 
 
 
