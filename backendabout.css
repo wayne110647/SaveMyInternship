@@ -205,11 +205,10 @@ body {
     transition: transform 0.3s ease;
   }
 
-  /* hover บนมือถือ ขยายเล็ก ๆ หรือปิดเลย */
-  .home-content img:hover,
-  #main-img:hover {
-    transform: scale(1.05); /* หรือ none ถ้าไม่อยากให้ขยายเลย */
-  }
+.hover-img:hover{
+    transform: scale none; 
+    height: auto;
+}
 
   .home-text h1 {
     font-size: 32px;
@@ -237,6 +236,7 @@ body {
   }
 
 }
+
 
 
 
