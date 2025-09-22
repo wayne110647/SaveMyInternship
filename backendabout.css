@@ -202,7 +202,7 @@ body {
   /* รูปโปรไฟล์ */
   #main-img {
     display: block;
-    margin: 4px auto ;
+    margin: 0px auto ;
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -222,7 +222,6 @@ body {
   /* ข้อความใต้รูป */
   .home-text {
     text-align: center;
-    gap:0 ;
     margin-top: 0 !important;
     padding-top: 0 !important;
   }
@@ -246,6 +245,7 @@ body {
   }
 
 }
+
 
 
 
