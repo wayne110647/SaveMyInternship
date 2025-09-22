@@ -219,7 +219,9 @@ body {
   text-align: center;
   margin-top: 4px !important; /* ดันข้อความลงจากรูป */
   padding-top: 0 !important;
-  font-size: smaill;
+  font-size: 14px;       /* ขนาดเล็กพอดีสำหรับมือถือ */
+  line-height: 1.6;      /* ให้ข้อความโปร่ง อ่านง่าย */
+
 }
 
 
@@ -234,6 +236,7 @@ body {
     display: none;
 }
 }
+
 
 
 
