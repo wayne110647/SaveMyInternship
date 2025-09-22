@@ -218,10 +218,13 @@ body {
   /* ข้อความใต้รูป */
   .home-text {
     text-align: center;
-    margin-top: -150!important;
+    margin-top: -4px !important;
     padding-top: 0 !important;
     margin-bottom: 0px !important;
     border: 1px solid red;
+    border: 1px dashed blue;
+}
+
   }
 
 .home-text h2 {
@@ -246,6 +249,7 @@ body {
 
 
 }
+
 
 
 
