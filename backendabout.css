@@ -207,7 +207,7 @@ body {
     position: static ;
     transform: none ;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
-    border: 1px solid red;
+
   }
 
   /* ปิดการขยายเมื่อ hover */
@@ -217,14 +217,11 @@ body {
 
   /* ข้อความใต้รูป */
   .home-text {
-    text-align: justify;
+    text-align: center;
     margin-top: -150px !important;
     padding-top: 0 !important;
     margin-bottom: 0px !important;
-    border: 1px solid red;
-    border: 1px dashed blue;
-    padding: 0 16px;
-    line-height: 1.6;
+
     
 }
 
@@ -252,6 +249,7 @@ body {
 
 
 }
+
 
 
 
