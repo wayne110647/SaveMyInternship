@@ -192,7 +192,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 0 16px;
-    gap: 0.1rem;
+    gap: 0rem;
   }
 
   #main-img {
@@ -224,19 +224,19 @@ body {
 
   .home-text h1 {
     font-size: 32px;
-    margin-top: 0.0rem;
+    
   }
 
   .home-text h2 {
     padding-top: 0rem;
     font-size: 20px;
-    margin-top: 0rem;
   }
 
 .music-player button {
     display: none;
 }
 }
+
 
 
 
