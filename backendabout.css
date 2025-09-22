@@ -155,6 +155,7 @@ body {
   /* ดันเนื้อหาลงจาก navbar */
   .home-section {
     padding-top: 280px;
+    padding-bottom: 0;
   }
 
   /* Navbar */
@@ -245,6 +246,7 @@ body {
   }
 
 }
+
 
 
 
