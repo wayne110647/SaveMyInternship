@@ -220,11 +220,23 @@ body {
     text-align: center;
     margin-top: -150!important;
     padding-top: 0 !important;
-    margin-bottom: 30px !important;
+    margin-bottom: 0px !important;
     border: 1px solid red;
   }
 
+.home-text h2 {
+    font-size: 20px;
+    margin: 0;
+    text-shadow: 2px 2px 8px black
+}
 
+.home-text h1 {
+    font-size: 25px;
+    margin: 0;
+    text-shadow: 2px 2px 8px black
+}
+
+    
   /* ปิดปุ่มเล่นเพลงบนมือถือ */
   .music-player button {
     display: none;
@@ -234,6 +246,7 @@ body {
 
 
 }
+
 
 
 
