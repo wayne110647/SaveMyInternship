@@ -150,3 +150,42 @@ body {
     text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;       /* เรียงแนวตั้ง */
+    align-items: center;          /* จัดให้อยู่ตรงกลาง */
+    gap: 1rem;                    /* เว้นระยะห่างระหว่างเมนู */
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li {
+    width: 100%;                  /* ให้เมนูเต็มความกว้าง */
+    text-align: center;           /* ข้อความอยู่ตรงกลาง */
+  }
+
+  nav a {
+    color: black;                 /* สีลิงก์บนพื้นขาว */
+    display: block;
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar {
+    padding: 0.5rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    top: 0;
+  }
+
+  nav li:hover {
+    transform: none;              /* ปิด scale บนมือถือ */
+  }
+
+  nav a:hover {
+    color: #333333;               /* hover ให้เข้มขึ้นเล็กน้อย */
+  }
+}
+
+
+
