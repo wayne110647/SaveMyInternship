@@ -53,11 +53,6 @@ nav a:hover {
 
 }
 
-nav li:hover{
-    transform: scale(1.1);
-    
-}
-
 body {
     font-family: 'IBM Plex Sans Thai', 'Sarabun', sans-serif;
     line-height: 1.6;
@@ -150,6 +145,8 @@ body {
     text-align: center;
 }
 
+
+
 @media screen and (max-width: 768px) {
 
 .navbar {
@@ -236,6 +233,7 @@ body {
   }
 
 }
+
 
 
 
