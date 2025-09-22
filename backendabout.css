@@ -209,16 +209,22 @@ body {
     padding: 0 16px;
   }
 
-  #main-img {
-    display: block;
-    margin: 0 auto;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 3px solid #ffd700;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  }
+#main-img {
+  display: block;
+  margin: 4px auto !important;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #ffd700;
+  object-fit: cover;
+  position: static !important;
+  transform: none !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hover-img:hover {
+  transform: none;
+}
 
   .home-text {
     margin-top: 8px;
@@ -243,6 +249,7 @@ body {
 }
 
 }
+
 
 
 
