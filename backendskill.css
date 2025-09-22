@@ -350,59 +350,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-    
-
-
-
-
-
-
-
 @media (max-width: 768px) {
     
 .home-image {
@@ -431,7 +378,7 @@ body {
   body {
     font-size: medium;
     background-color: #0b8f3f;
-    background-image: radial-gradient(#fff700 1px, transparent 1px);
+    background-image: url("images/bgport.png");
     background-size: 20px 20px;
     background-position: center;
     padding: 0 16px;
@@ -683,6 +630,7 @@ body {
     
     
     
+
 
 
 
