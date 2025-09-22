@@ -220,16 +220,20 @@ body {
   /* ข้อความใต้รูป */
   .home-text {
     text-align: center;
-    margin-top: 0px ;
-    padding-top: 0 ;
-    font-size: 14px;
-    line-height: 1.6;
+    gap:0 ;
   }
 
-  .home-text h1,
-  .home-text h2 {
+.home-text h2 {
+    font-size: 10px;
     margin: 0;
-  }
+    text-shadow: 2px 2px 8px black
+}
+
+    .home-text h1 {
+    font-size: 15px;
+    margin: 0;
+    text-shadow: 2px 2px 8px black
+}
 
   /* ปิดปุ่มเล่นเพลงบนมือถือ */
   .music-player button {
@@ -237,6 +241,7 @@ body {
   }
 
 }
+
 
 
 
