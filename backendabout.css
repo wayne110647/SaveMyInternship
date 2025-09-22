@@ -10,47 +10,34 @@ nav ul {
 
 nav a {
     text-decoration: none; /*เอาเส้นใต้ลิงค์ออก*/
-    color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
     font-weight: bold;
-    position: relative;
-  transition: color 0.3s ease;
 
 
 }
 
 .navbar{
 
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    background-color: azure;
      padding: 1rem;
      position: sticky; /* ติดบนเวลาเลื่อน */
      top: 1%; /* ระยะห่างจากบนสุดของหน้าจอ */
      z-index: 1000; /* ให้แน่ใจว่าอยู่บนทุกอย่าง */
-     
     
 
-}
-
-nav a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0%;
-  height: 2px;
-  background-color: #ffd700;
-  transition: width 0.3s ease;
 }
 
 
 nav a:hover {
 
-    color: #000000;
-    width: 100%;
+    color: #c08a8a;
    
 
+}
+
+nav li:hover{
+    transform: scale(1.1);
+    transform: all 0.3s ease;
 }
 
 body {
@@ -144,105 +131,3 @@ body {
 .abouttext{
     text-align: center;
 }
-
-
-
-@media screen and (max-width: 768px) {
-
-.navbar {
-    padding: 0.5rem;
-    top: 0;
-    border-radius: 8px;
-    color: white !important ; /* ข้อความ navbar เป็นดำ */
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-  }
-
-  nav a {
-    color: black; /* ลิงก์เป็นดำ */
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-  }
-
-  nav li:hover {
-    transform: none; /* ปิด scale บนมือถือ */
-  }
-
-  nav a:hover {
-    color: #333333; /* hover ให้เข้มขึ้นเล็กน้อย */
-  }
-}
-  /* ปรับ home content ให้เป็นแนวตั้ง */
-  .home-content {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    padding: 0 16px;
-  }
-
-  .home-image {
-    position: static;
-    top: 0;
-    padding: 0;
-    margin-bottom: 16px;
-  }
-
-  #main-img {
-    width: 180px;  /* เล็กลงให้พอดีมือถือ */
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #ffd700;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    margin: 0 auto;
-    transition: transform 0.3s ease;
-  }
-
-.hover-img:hover{
-    transform: scale none; 
-    height: auto;
-}
-
-  .home-text h1 {
-    font-size: 32px;
-    text-align: center;
-  }
-
-  .home-text h2 {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .music-player {
-    bottom: 10px;
-    right: 10px;
-  }
-
-  .music-player button {
-    font-size: 13px;
-    padding: 6px 12px;
-  }
-
-  .abouttext {
-    font-size: 16px;
-    padding: 0 8px;
-  }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
