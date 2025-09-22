@@ -190,7 +190,7 @@ body {
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 0;
     gap: 0 ;
     padding-top: 280px ;
@@ -221,7 +221,7 @@ body {
     text-align: center;
     margin-top: 0 !important;
     padding-top: 0 !important;
-    margin-bottom: 0 !important;
+    margin-bottom: 16px !important;
     border: 1px solid red;
   }
 
@@ -232,7 +232,7 @@ body {
     
 }
 
-    .home-text h1 {
+.home-text h1 {
     font-size: 25px;
     margin: 0;
     text-shadow: 2px 2px 8px black
@@ -247,6 +247,7 @@ body {
 
 
 }
+
 
 
 
