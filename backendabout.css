@@ -223,6 +223,8 @@ body {
     margin-bottom: 0px !important;
     border: 1px solid red;
     border: 1px dashed blue;
+    padding: 0 16px;
+    line-height: 1.6;
     
 }
 
@@ -250,6 +252,7 @@ body {
 
 
 }
+
 
 
 
