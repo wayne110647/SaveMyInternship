@@ -218,7 +218,7 @@ body {
   /* ข้อความใต้รูป */
   .home-text {
     text-align: center;
-    margin-top: -4px !important;
+    margin-top: -150px !important;
     padding-top: 0 !important;
     margin-bottom: 0px !important;
     border: 1px solid red;
@@ -249,6 +249,7 @@ body {
 
 
 }
+
 
 
 
