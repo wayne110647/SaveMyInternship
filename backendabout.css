@@ -151,9 +151,13 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  
+
+.home-section {
+    padding-top: 80px; /* ดันเนื้อหาลงจาก navbar */
+  }  
 .navbar {
     padding: 0.5rem;
+    z-index: 1000;
   }
 
 .navbar a {
@@ -188,7 +192,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 0 16px;
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
   /* ปรับรูปให้ขนาดพอดีมือถือ */
@@ -218,10 +222,12 @@ body {
   }
 
   .home-text h2 {
+    padding-top: 4rem;
     font-size: 20px;
     margin-top: 0.25rem;
   }
 }
+
 
 
 
