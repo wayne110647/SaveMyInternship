@@ -151,27 +151,21 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    background-image: url("images/bgport.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    font-family: 'Prompt', sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
 
-
+  /* ดันเนื้อหาลงจาก navbar */
   .home-section {
-    padding-top: 280px; /* ดันเนื้อหาลงจาก navbar */
+    padding-top: 280px;
   }
 
-  /* ส่วนของ navbar */
+  /* Navbar */
   .navbar {
     padding: 0.5rem;
     z-index: 1000;
+  }
+
+  .navbar a {
+    font-size: 1em;
+    padding: 0.5em;
   }
 
   .navbar ul {
@@ -182,12 +176,6 @@ body {
     text-align: center;
   }
 
-  .navbar a {
-    font-size: 1em;
-    padding: 0.5em;
-  }
-
-  /* รายการเมนูใน navbar */
   nav li {
     width: 100%;
     text-align: center;
@@ -201,54 +189,55 @@ body {
     color: #dddddd;
   }
 
+  /* กล่องรวมรูปกับข้อความ */
   .home-content {
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0 16px;
+    gap: 0 ;
   }
 
-#main-img {
-  display: block;
-  margin: 4px auto !important;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border: 3px solid #ffd700;
-  object-fit: cover;
-  position: static !important;
-  transform: none !important;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
+  /* รูปโปรไฟล์ */
+  #main-img {
+    display: block;
+    margin: 4px auto ;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #ffd700;
+    object-fit: cover;
+    position: static ;
+    transform: none ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
 
-.hover-img:hover {
-  transform: none;
-}
+  /* ปิดการขยายเมื่อ hover */
+  .hover-img:hover {
+    transform: none;
+  }
 
+  /* ข้อความใต้รูป */
   .home-text {
-    margin-top: 8px;
+    text-align: center;
+    margin-top: 4px ;
+    padding-top: 0 ;
     font-size: 14px;
     line-height: 1.6;
-    max-width: 320px;
   }
 
-  .home-text h1 {
-    font-size: 28px;
-    margin-bottom: 4px;
-  }
-
+  .home-text h1,
   .home-text h2 {
-    font-size: 16px;
     margin: 0;
   }
 
+  /* ปิดปุ่มเล่นเพลงบนมือถือ */
   .music-player button {
     display: none;
   }
-}
 
 }
+
 
 
 
