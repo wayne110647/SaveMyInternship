@@ -61,7 +61,7 @@ nav li:hover{
 body {
     font-family: 'Times New Roman Bold Italic', 'Times', sans-serif;
     line-height: 1.6;
-    background-image: url("images/bgport.png");
+    background-image: url("images/bggif.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -373,6 +373,7 @@ body {
     font-size: 1em;
   }
 }
+
 
 
 
